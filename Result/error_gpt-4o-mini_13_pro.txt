@@ -1,0 +1,1595 @@
+File Name: ThreeAxisController.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ThreeAxisController.c (with preprocessing)
+[kernel:annot-error] Output/ThreeAxisController.c:8: Warning: 
+  unbound logic variable NULL. Ignoring logic specification of function ThreeAxisControllerFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: TripleFabsMax.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/TripleFabsMax.c (with preprocessing)
+[kernel] Output/TripleFabsMax.c:26: 
+  syntax error:
+  Location: between lines 26 and 27, before or at token: if
+  24            loop invariant fabsfz3 == pIp->fz3 || fabsfz3 == -pIp->fz3;
+  25            loop assigns fabsfx1, fabsfy2, fabsfz3;
+  
+  26        */
+  27        if (pIp->fx1 < 0.0f)
+  
+  28        {
+  29            fabsfx1 = -pIp->fx1;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: MatrixMulti.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/MatrixMulti.c (with preprocessing)
+[kernel:annot-error] Output/MatrixMulti.c:10: Warning: unexpected token '='
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: InitVar.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/InitVar.c, line 23) in 'InitVarFun' (2/10):\nEffect at line 51\nAssume { (* Heap *) Type: linked(Malloc_0). }\nProve: invalid(Malloc_0, addr_of_int(32000), 1).\nProver Z3 4.8.12 returns Timeout (Qed:1.00ms) (3s)", 'Error found in file: Output/InitVar.c at line: 23', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 23) in 'InitVarFun' (3/10):\nEffect at line 51\nAssume { (* Heap *) Type: linked(Malloc_0). }\nProve: invalid(Malloc_0, addr_of_int(32340), 1).\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/InitVar.c at line: 23', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 23) in 'InitVarFun' (4/10):\nEffect at line 51\nAssume { (* Heap *) Type: linked(Malloc_0). }\nProve: invalid(Malloc_0, addr_of_int(32680), 1).\nProver Z3 4.8.12 returns Timeout (Qed:2ms) (3s)", 'Error found in file: Output/InitVar.c at line: 23', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 23) in 'InitVarFun' (5/10):\nEffect at line 52\nAssume { (* Heap *) Type: linked(Malloc_0). }\nProve: invalid(Malloc_0, addr_of_int(32024), 1).\nProver Z3 4.8.12 returns Timeout (Qed:2ms) (3s)", 'Error found in file: Output/InitVar.c at line: 23', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 23) in 'InitVarFun' (6/10):\nEffect at line 52\nAssume { (* Heap *) Type: linked(Malloc_0). }\nProve: invalid(Malloc_0, addr_of_int(32364), 1).\nProver Z3 4.8.12 returns Timeout (Qed:4ms) (3s)", 'Error found in file: Output/InitVar.c at line: 23', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 23) in 'InitVarFun' (7/10):\nEffect at line 52\nAssume { (* Heap *) Type: linked(Malloc_0). }\nProve: invalid(Malloc_0, addr_of_int(32704), 1).\nProver Z3 4.8.12 returns Timeout (Qed:3ms) (3s)", 'Error found in file: Output/InitVar.c at line: 23', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 23) in 'InitVarFun' (8/10):\nEffect at line 53\nAssume { (* Heap *) Type: linked(Malloc_0). }\nProve: invalid(Malloc_0, addr_of_int(32028), 1).\nProver Z3 4.8.12 returns Timeout (Qed:4ms) (3s)", 'Error found in file: Output/InitVar.c at line: 23', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 23) in 'InitVarFun' (9/10):\nEffect at line 53\nAssume { (* Heap *) Type: linked(Malloc_0). }\nProve: invalid(Malloc_0, addr_of_int(32368), 1).\nProver Z3 4.8.12 returns Timeout (Qed:5ms) (3s)", 'Error found in file: Output/InitVar.c at line: 23', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 23) in 'InitVarFun' (10/10):\nEffect at line 53\nAssume { (* Heap *) Type: linked(Malloc_0). }\nProve: invalid(Malloc_0, addr_of_int(32708), 1).\nProver Z3 4.8.12 returns Timeout (Qed:7ms) (3s)", 'Error found in file: Output/InitVar.c at line: 23', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+
+Assertion Results:
+- True
+- False
+- False
+- False
+- False
+- False
+- False
+- False
+- False
+- False
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+
+------------------------------------------------
+File Name: AppInit.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns nothing in 'AppInitFun' (1/3):\nEffect at line 17\nAssume { (* Pre-condition *) Have: G_pIp_41 != 0. }\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:1ms)", None, None)
+- ("Goal Assigns nothing in 'AppInitFun' (2/3):\nEffect at line 23\nAssume { (* Pre-condition *) Have: G_pIp_41 != 0. }\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:0.85ms)", None, None)
+- ("Goal Assigns nothing in 'AppInitFun' (3/3):\nEffect at line 26\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0).\n  (* Pre-condition *)\n  Have: G_pIp_41 != 0.\n}\nProve: invalid(Malloc_0, addr_of_int(32899), 1).\nProver Z3 4.8.12 returns Unknown (Qed:1ms)", None, None)
+
+Assertion Results:
+- True
+- False
+- False
+- False
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: main.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/main.c, line 10) in 'mainFun' (1/3):\nEffect at line 15\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_41 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          Mptr_0[shiftfield_F12___main_ret(global(G_pIp_41))], 1).\n}\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:0.80ms) (3s)", 'Error found in file: Output/main.c at line: 10', 'Error line content: assigns *(pIp->ret);')
+- ("Goal Assigns (file Output/main.c, line 10) in 'mainFun' (2/3):\nEffect at line 18\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_41 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          Mptr_0[shiftfield_F12___main_ret(global(G_pIp_41))], 1).\n}\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:0.85ms) (3s)", 'Error found in file: Output/main.c at line: 10', 'Error line content: assigns *(pIp->ret);')
+- ("Goal Assigns (file Output/main.c, line 10) in 'mainFun' (3/3):\nEffect at line 20\nLet a = shiftfield_F12___main_ret(global(G_pIp_41)).\nLet a_1 = Mptr_1[a].\nLet a_2 = Mptr_0[a].\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_1).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_2, 1).\n  (* Pre-condition *)\n  Have: G_pIp_41 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1).\n}\nProve: a_2 = a_1.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/main.c at line: 10', 'Error line content: assigns *(pIp->ret);')
+
+Assertion Results:
+- False
+- False
+- False
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/main.c, line 9) in 'mainFun':\nLet a = Mptr_0[shiftfield_F12___main_ret(global(G_pIp_41))].\nLet x = Mint_0[a].\nAssume {\n  Type: is_sint32(x).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_41 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 1).\n}\nProve: x = 0.\nProver Z3 4.8.12 returns Timeout (Qed:2ms) (3s)", 'Error found in file: Output/main.c at line: 9', 'Error line content: ensures \\old(*(pIp->ret)) == 0;')
+
+Postcond Results:
+- False
+
+------------------------------------------------
+File Name: CalculateGyroRs.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/CalculateGyroRs.c (with preprocessing)
+[kernel:annot-error] Output/CalculateGyroRs.c:11: Warning: 
+  subscripted value is neither array nor pointer. Ignoring logic specification of function CalculateGyroRsFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: CheckCal.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/CheckCal.c (with preprocessing)
+[kernel:annot-error] Output/CheckCal.c:17: Warning: unexpected token '='
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SendUartData.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+- True
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: TMProcess.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/TMProcess.c (with preprocessing)
+[kernel:annot-error] Output/TMProcess.c:8: Warning: 
+  unbound logic variable NULL. Ignoring logic specification of function TMProcessFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: Tr32Float.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/Tr32Float.c, line 12) in 'Tr32FloatFun' (7/11):\nEffect at line 31\nLet a = pIp_0.F10___Tr32Float_ret.\nLet a_1 = pIp_0.F10___Tr32Float_pA.\nLet a_2 = pIp_0.F10___Tr32Float_pB.\nLet a_3 = pIp_0.F10___Tr32Float_pC.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_0.F10___Tr32Float_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a_2.base) <= 0) /\\\n      (region(a_3.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1) /\\ valid_rw(Malloc_0, a_2, 1) /\\\n      valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 1).\n}\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:2ms)", 'Error found in file: Output/Tr32Float.c at line: 12', 'Error line content: assigns *(pIp->pA), *(pIp->pB), *(pIp->pC), *(pIp->ret);')
+
+Assertion Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- False
+- True
+- True
+- True
+- True
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/Tr32Float.c, line 8) in 'Tr32FloatFun':\nLet a = pIp_0.F10___Tr32Float_ret.\nLet a_1 = pIp_0.F10___Tr32Float_pA.\nLet a_2 = pIp_0.F10___Tr32Float_pB.\nLet a_3 = pIp_0.F10___Tr32Float_pC.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_0.F10___Tr32Float_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a_2.base) <= 0) /\\\n      (region(a_3.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1) /\\ valid_rw(Malloc_0, a_2, 1) /\\\n      valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 1).\n}\nProve: of_f32((pIp_0.F10___Tr32Float_ui2f).F8_TAG_DATA_TYPE_CONVERT_flt32)\n         = of_f32(Mf32_0[a_1]).\nProver Z3 4.8.12 returns Timeout (Qed:6ms) (2.5s)", 'Error found in file: Output/Tr32Float.c at line: 8', 'Error line content: ensures \\old(*(pIp->pA)) == pIp->ui2f.flt32;')
+- ("Goal Post-condition (file Output/Tr32Float.c, line 9) in 'Tr32FloatFun':\nLet a = pIp_0.F10___Tr32Float_ret.\nLet a_1 = pIp_0.F10___Tr32Float_pA.\nLet a_2 = pIp_0.F10___Tr32Float_pB.\nLet a_3 = pIp_0.F10___Tr32Float_pC.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_0.F10___Tr32Float_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a_2.base) <= 0) /\\\n      (region(a_3.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1) /\\ valid_rw(Malloc_0, a_2, 1) /\\\n      valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 1).\n}\nProve: of_f32((pIp_0.F10___Tr32Float_ui2f).F8_TAG_DATA_TYPE_CONVERT_flt32)\n         = of_f32(Mf32_0[a_2]).\nProver Z3 4.8.12 returns Timeout (Qed:6ms) (2.5s)", 'Error found in file: Output/Tr32Float.c at line: 9', 'Error line content: ensures \\old(*(pIp->pB)) == pIp->ui2f.flt32;')
+- ("Goal Post-condition (file Output/Tr32Float.c, line 10) in 'Tr32FloatFun':\nLet a = pIp_0.F10___Tr32Float_ret.\nLet a_1 = pIp_0.F10___Tr32Float_pA.\nLet a_2 = pIp_0.F10___Tr32Float_pB.\nLet a_3 = pIp_0.F10___Tr32Float_pC.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_0.F10___Tr32Float_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a_2.base) <= 0) /\\\n      (region(a_3.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1) /\\ valid_rw(Malloc_0, a_2, 1) /\\\n      valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 1).\n}\nProve: of_f32((pIp_0.F10___Tr32Float_ui2f).F8_TAG_DATA_TYPE_CONVERT_flt32)\n         = of_f32(Mf32_0[a_3]).\nProver Z3 4.8.12 returns Timeout (Qed:6ms) (2.5s)", 'Error found in file: Output/Tr32Float.c at line: 10', 'Error line content: ensures \\old(*(pIp->pC)) == pIp->ui2f.flt32;')
+- ("Goal Post-condition (file Output/Tr32Float.c, line 11) in 'Tr32FloatFun':\nLet a = pIp_0.F10___Tr32Float_ret.\nLet a_1 = pIp_0.F10___Tr32Float_pA.\nLet a_2 = pIp_0.F10___Tr32Float_pB.\nLet a_3 = pIp_0.F10___Tr32Float_pC.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_0.F10___Tr32Float_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a_2.base) <= 0) /\\\n      (region(a_3.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1) /\\ valid_rw(Malloc_0, a_2, 1) /\\\n      valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 1).\n}\nProve: of_f32((pIp_0.F10___Tr32Float_ui2f).F8_TAG_DATA_TYPE_CONVERT_flt32)\n         = of_f32(Mf32_0[a]).\nProver Z3 4.8.12 returns Timeout (Qed:6ms) (2.5s)", 'Error found in file: Output/Tr32Float.c at line: 11', 'Error line content: ensures \\old(*(pIp->ret)) == pIp->ui2f.flt32;')
+
+Postcond Results:
+- False
+- False
+- False
+- False
+
+------------------------------------------------
+File Name: NoctrlJudge.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/NoctrlJudge.c (with preprocessing)
+[kernel] Output/NoctrlJudge.c:31: 
+  syntax error:
+  Location: between lines 31 and 32, before or at token: if
+  29          loop assigns pIp->mFWarning.countAV, pIp->mFWarning.Wav;
+  30          loop variant 301 - pIp->mFWarning.countAV;
+  
+  31        */
+  32        if (fabsmax > 2.0f)
+  
+  33        {
+  34            pIp -> mFWarning.countAV++;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroChoose.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+- True
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+- True
+- True
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/GyroChoose.c, line 10) in 'GyroChooseFun':\nLet a = pIp_0.F10___GyroChoose_pGyroData.\nAssume {\n  Type: is_uint8(i) /\\ is_uint32(v).\n  (* Heap *)\n  Type: (region(pIp_0.F10___GyroChoose_fun.base) <= 0) /\\\n      (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 69).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_uint64(shiftfield_F1_TAG_DIGITAL_GYRO_DATA_stateFlag(a), 0),\n          9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_uint8(shiftfield_F1_TAG_DIGITAL_GYRO_DATA_SignFlag(a), 0), 9).\n  (* Invariant *)\n  Have: (0 <= i) /\\ (i <= 9).\n  (* Else *)\n  Have: 9 <= i.\n}\nProve: v = 0.\nProver Z3 4.8.12 returns Timeout (Qed:5ms) (3s)", 'Error found in file: Output/GyroChoose.c at line: 10', 'Error line content: ensures pIp->pGyroData->gyroStatus0 == 0; // Corrected post-condition')
+
+Postcond Results:
+- True
+- False
+
+------------------------------------------------
+File Name: ThrusterCtrlLogic.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ThrusterCtrlLogic.c (with preprocessing)
+[kernel:annot-error] Output/ThrusterCtrlLogic.c:6: Warning: 
+  In ACSL, there is no implicit conversion between a C array and a pointer. Either introduce an explicit cast or take the address of the first element of pIp->mModulator. Ignoring logic specification of function ThrusterCtrlLogicFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModeCruise.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: GyroProceed.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/GyroProceed.c, line 15) in 'GyroProceedFun' (2/9):\nEffect at line 22\nAssume { (* Pre-condition *) Have: G_pIp_56 != 0. }\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:2ms)", 'Error found in file: Output/GyroProceed.c at line: 15', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+- ("Goal Assigns (file Output/GyroProceed.c, line 15) in 'GyroProceedFun' (3/9):\nEffect at line 25\nAssume { (* Pre-condition *) Have: G_pIp_56 != 0. }\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:1ms)", 'Error found in file: Output/GyroProceed.c at line: 15', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+- ("Goal Assigns (file Output/GyroProceed.c, line 15) in 'GyroProceedFun' (4/9):\nEffect at line 28\nAssume { (* Pre-condition *) Have: G_pIp_56 != 0. }\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:2ms)", 'Error found in file: Output/GyroProceed.c at line: 15', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+- ("Goal Assigns (file Output/GyroProceed.c, line 15) in 'GyroProceedFun' (5/9):\nEffect at line 31\nAssume { (* Pre-condition *) Have: G_pIp_56 != 0. }\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:1ms)", 'Error found in file: Output/GyroProceed.c at line: 15', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+- ("Goal Assigns (file Output/GyroProceed.c, line 15) in 'GyroProceedFun' (8/9):\nEffect at line 38\nAssume { (* Pre-condition *) Have: G_pIp_56 != 0. }\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:2ms)", 'Error found in file: Output/GyroProceed.c at line: 15', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+- ("Goal Assigns (file Output/GyroProceed.c, line 15) in 'GyroProceedFun' (9/9):\nEffect at line 44\nAssume { (* Pre-condition *) Have: G_pIp_56 != 0. }\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:2ms)", 'Error found in file: Output/GyroProceed.c at line: 15', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+
+Assertion Results:
+- True
+- False
+- False
+- False
+- False
+- True
+- True
+- False
+- False
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: Inputproceed.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/Inputproceed.c (with preprocessing)
+[kernel:annot-error] Output/Inputproceed.c:8: Warning: 
+  pIp->mDSSData is not a pointer.. Ignoring logic specification of function InputproceedFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SoftFaultJudgeSP.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+- True
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/SoftFaultJudgeSP.c, line 8) in 'SoftFaultJudgeSPFun':\nLet x = (pIp_2.F10___SoftFaultJudgeSP_mDSSData).F5_TAG_DSS_DATA_flgSP.\nLet a = Init_pIp_0.Init_F10___SoftFaultJudgeSP_mFWarning.\nLet a_1 = pIp_2.F10___SoftFaultJudgeSP_mFWarning.\nLet x_1 = a_1.F4_TAG_FAULT_WARNING_countSPSeen.\nLet x_2 = a_1.F4_TAG_FAULT_WARNING_countSPLost.\nLet a_2 = pIp_0.F10___SoftFaultJudgeSP_mFWarning.\nLet x_3 = a_2.F4_TAG_FAULT_WARNING_countSPLost.\nAssume {\n  Type: is_uint32(v) /\\ is_uint32(v_1) /\\ is_uint32(x_3) /\\\n      is_uint32(a_2.F4_TAG_FAULT_WARNING_countSPSeen) /\\\n      is_uint32((pIp_1.F10___SoftFaultJudgeSP_mFWarning).F4_TAG_FAULT_WARNING_countSPSeen) /\\\n      is_uint32(x_2) /\\ is_uint32(x_1) /\\ is_uint64(x).\n  (* Heap *)\n  Type: region(pIp_2.F10___SoftFaultJudgeSP_fun.base) <= 0.\n  (* Invariant *)\n  Have: 0 <= x_2.\n  (* Invariant *)\n  Have: 0 <= x_1.\n  (* Loop assigns ... *)\n  Have: (({ Init_pIp_0 with\n            Init_F10___SoftFaultJudgeSP_mFWarning = { a with\n                                                      Init_F4_TAG_FAULT_WARNING_countSPLost = v_2\n                                                      } }) = Init_pIp_0) /\\\n      (({ Init_pIp_0 with\n          Init_F10___SoftFaultJudgeSP_mFWarning = { a with\n                                                    Init_F4_TAG_FAULT_WARNING_countSPSeen = v_3\n                                                    } }) = Init_pIp_0).\n  (* Invariant *)\n  Have: 0 <= v.\n  (* Invariant *)\n  Have: 0 <= v_1.\n  If x = 0\n  Then {\n    Have: Init_pIp_0 = Init_pIp_1.\n    Have: ({ Init_pIp_1 with\n             Init_F10___SoftFaultJudgeSP_mFWarning = {\n                                                       Init_pIp_1.Init_F10___SoftFaultJudgeSP_mFWarning with\n                                                       Init_F4_TAG_FAULT_WARNING_countSPLost = true\n                                                       } }) = Init_pIp_1.\n    Have: ({ pIp_2 with\n             F10___SoftFaultJudgeSP_mFWarning = { a_1 with\n                                                  F4_TAG_FAULT_WARNING_countSPLost = \n                                                    to_uint32(1 + v) ;\n                                                  F4_TAG_FAULT_WARNING_countSPSeen = 0\n                                                  } }) = pIp_0.\n  }\n  Else {\n    Have: Init_pIp_0 = Init_pIp_2.\n    If v != 0\n    Then {\n      Have: (({ Init_pIp_2 with\n                Init_F10___SoftFaultJudgeSP_mFWarning = {\n                                                          Init_pIp_2.Init_F10___SoftFaultJudgeSP_mFWarning with\n                                                          Init_F4_TAG_FAULT_WARNING_countSPSeen = true\n                                                          } }) = Init_pIp_2) /\\\n          (({ pIp_2 with\n              F10___SoftFaultJudgeSP_mFWarning = { a_1 with\n                                                   F4_TAG_FAULT_WARNING_countSPLost = v ;\n                                                   F4_TAG_FAULT_WARNING_countSPSeen = \n                                                     to_uint32(1 + v_1) } }) =\n           pIp_1).\n    }\n    Else {\n      Have: ({ pIp_2 with\n               F10___SoftFaultJudgeSP_mFWarning = { a_1 with\n                                                    F4_TAG_FAULT_WARNING_countSPLost = 0 ;\n                                                    F4_TAG_FAULT_WARNING_countSPSeen = v_1\n                                                    } }) = pIp_1.\n    }\n    If 3\n         <= ((pIp_1.F10___SoftFaultJudgeSP_mFWarning).F4_TAG_FAULT_WARNING_countSPSeen)\n    Then {\n      Let a_3 = Init_pIp_2.Init_F10___SoftFaultJudgeSP_mFWarning.\n      Have: pIp_1 = pIp_3.\n      Have: ({ Init_pIp_2 with\n               Init_F10___SoftFaultJudgeSP_mFWarning = { a_3 with\n                                                         Init_F4_TAG_FAULT_WARNING_countSPLost = true\n                                                         } }) = Init_pIp_2.\n      Have: (({ Init_pIp_2 with\n                Init_F10___SoftFaultJudgeSP_mFWarning = { a_3 with\n                                                          Init_F4_TAG_FAULT_WARNING_countSPSeen = true\n                                                          } }) = Init_pIp_2) /\\\n          (({ pIp_3 with\n              F10___SoftFaultJudgeSP_mFWarning = {\n                                                   pIp_3.F10___SoftFaultJudgeSP_mFWarning with\n                                                   F4_TAG_FAULT_WARNING_countSPLost = 0 ;\n                                                   F4_TAG_FAULT_WARNING_countSPSeen = 0\n                                                   } }) = pIp_0).\n    }\n    Else { Have: pIp_1 = pIp_0. }\n  }\n}\nProve: x_3 <= 33750.\nProver Z3 4.8.12 returns Unknown (Qed:61ms)", 'Error found in file: Output/SoftFaultJudgeSP.c at line: 8', 'Error line content: ensures pIp->mFWarning.countSPLost <= 33750;')
+
+Postcond Results:
+- True
+- True
+- False
+
+------------------------------------------------
+File Name: Delay.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+- True
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: LimitControllerInput.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/LimitControllerInput.c (with preprocessing)
+[kernel:annot-error] Output/LimitControllerInput.c:8: Warning: 
+  pIp->mAttitude is not a pointer.. Ignoring logic specification of function LimitControllerInputFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroPick.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+- True
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/GyroPick.c, line 10) in 'GyroPickFun':\nLet a = pIp_0.F10___GyroPick_pGyroData.\nLet a_1 = shiftfield_F1_TAG_DIGITAL_GYRO_DATA_countPick(a).\nLet a_2 = shift_uint8(a_1, 0).\nLet a_3 = shiftfield_F1_TAG_DIGITAL_GYRO_DATA_wal(a).\nLet a_4 = shift_float32(a_3, 0).\nLet a_5 = shiftfield_F1_TAG_DIGITAL_GYRO_DATA_wa(a).\nLet a_6 = shift_float32(a_5, 0).\nLet a_7 = shift_uint8(a_1, i).\nLet a_8 = havoc(Mf32_undef_0, havoc(Mf32_undef_1, Mf32_0, a_4, 9), a_6, 9).\nLet r = of_f32(a_8[shift_float32(a_3, i)]).\nLet r_1 = of_f32(a_8[shift_float32(a_5, i)]).\nAssume {\n  Type: is_uint8(iy_0).\n  (* Heap *)\n  Type: (region(pIp_0.F10___GyroPick_fun.base) <= 0) /\\\n      (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Goal *)\n  When: (0 <= i) /\\ (i <= 8).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 69).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_6, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 9).\n  (* Invariant *)\n  Have: (0 <= iy_0) /\\ (iy_0 <= 9).\n  (* Else *)\n  Have: 9 <= iy_0.\n}\nProve: havoc(Mint_undef_0, Mint_0, a_2, 9)[a_7] =\n    (Mint_0[a_7]\n     + (if (if (r < r_1) then (((6442451.0/134217728) + r) < r_1)\n            else (((6442451.0/134217728) + r_1) < r)) then 1 else 0)).\nProver Z3 4.8.12 returns Timeout (Qed:8ms) (2.6s)", 'Error found in file: Output/GyroPick.c at line: 10', 'Error line content: ensures \\forall int i; 0 <= i < 9 ==>')
+
+Postcond Results:
+- False
+
+------------------------------------------------
+File Name: TcProcess.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns nothing in 'TcProcessFun' (1/2):\nEffect at line 27\nAssume { (* Pre-condition *) Have: G_pIp_41 != 0. }\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:0.65ms)", None, None)
+- ("Goal Assigns nothing in 'TcProcessFun' (2/2):\nEffect at line 41\nAssume {\n  (* Pre-condition *)\n  Have: G_pIp_41 != 0.\n  (* Then *)\n  Have: Mint_0[global(L_GetUartData_ret_52)] = 1.\n}\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", None, None)
+
+Assertion Results:
+- False
+- False
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: MatrixInv33F.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+- ('Goal Preservation of Invariant (file Output/MatrixInv33F.c, line 36):\nLet a = pIp_0.F10___MatrixInv33F_inv.\nLet a_1 = shift_float32(a, 0).\nLet a_2 = pIp_0.F10___MatrixInv33F_src.\nLet a_3 = shift_float32(a_2, 4).\nLet a_4 = shift_float32(a_2, 8).\nLet a_5 = shift_float32(a_2, 5).\nLet a_6 = shift_float32(a_2, 7).\nLet a_7 = sub_f32(mul_f32(Mf32_0[a_3], Mf32_0[a_4]),\n            mul_f32(Mf32_0[a_5], Mf32_0[a_6])).\nLet m = Mf32_0[a_1 <- a_7].\nLet a_8 = shift_float32(a_2, 2).\nLet a_9 = shift_float32(a_2, 1).\nLet m_1 = m[shift_float32(a, 1)\n            <- sub_f32(mul_f32(m[a_8], m[a_6]), mul_f32(m[a_9], m[a_4]))].\nLet m_2 = m_1[shift_float32(a, 2)\n            <- sub_f32(mul_f32(m_1[a_9], m_1[a_5]),\n                 mul_f32(m_1[a_8], m_1[a_3]))].\nLet a_10 = shift_float32(a_2, 6).\nLet a_11 = shift_float32(a_2, 3).\nLet a_12 = sub_f32(mul_f32(m_2[a_5], m_2[a_10]),\n             mul_f32(m_2[a_11], m_2[a_4])).\nLet m_3 = m_2[shift_float32(a, 3) <- a_12].\nLet a_13 = shift_float32(a_2, 0).\nLet m_4 = m_3[shift_float32(a, 4)\n            <- sub_f32(mul_f32(m_3[a_13], m_3[a_4]),\n                 mul_f32(m_3[a_8], m_3[a_10]))].\nLet m_5 = m_4[shift_float32(a, 5)\n            <- sub_f32(mul_f32(m_4[a_8], m_4[a_11]),\n                 mul_f32(m_4[a_13], m_4[a_5]))].\nLet a_14 = sub_f32(mul_f32(m_5[a_11], m_5[a_6]),\n             mul_f32(m_5[a_3], m_5[a_10])).\nLet m_6 = m_5[shift_float32(a, 6) <- a_14].\nLet m_7 = m_6[shift_float32(a, 7)\n            <- sub_f32(mul_f32(m_6[a_9], m_6[a_10]),\n                 mul_f32(m_6[a_13], m_6[a_6]))].\nLet m_8 = m_7[shift_float32(a, 8)\n            <- sub_f32(mul_f32(m_7[a_13], m_7[a_3]),\n                 mul_f32(m_7[a_9], m_7[a_11]))].\nLet a_15 = pIp_0.F10___MatrixInv33F_ret.\nLet x = to_sint8(1 + i).\nAssume {\n  Type: is_sint8(i).\n  (* Heap *)\n  Type: (region(pIp_0.F10___MatrixInv33F_fun.base) <= 0) /\\\n      (region(a_2.base) <= 0) /\\ (region(a_15.base) <= 0) /\\\n      (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_13, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_15, 1).\n  Have: ({ Init_pIp_0 with Init_F10___MatrixInv33F_bAbleInv = true }) =\n      Init_pIp_0.\n  If lt_f64(to_f64((4722366482869645.0/4722366482869645213696)),\n       to_f64(of_f32(add_f32(add_f32(mul_f32(m_8[a_13], a_7),\n                               mul_f32(m_8[a_9], a_12)),\n                       mul_f32(m_8[a_8], a_14)))))\n  Else {\n    (* Then *)\n    Have: lt_f64(to_f64(of_f32(add_f32(add_f32(mul_f32(m_8[a_13], a_7),\n                                         mul_f32(m_8[a_9], a_12)),\n                                 mul_f32(m_8[a_8], a_14)))),\n            to_f64((-4722366482869645.0/4722366482869645213696))).\n  }\n  (* Invariant *)\n  Have: (0 <= i) /\\ (i <= 8).\n}\nProve: (0 <= x) /\\ (x <= 8).\nProver Z3 4.8.12 returns Failed\nout of memory', 'Error found in file: Output/MatrixInv33F.c at line: 36', 'Error line content: /*@ loop invariant 0 <= i < 9;')
+- ('Goal Preservation of Invariant (file Output/MatrixInv33F.c, line 46):\nLet a = pIp_0.F10___MatrixInv33F_inv.\nLet a_1 = shift_float32(a, 0).\nLet a_2 = pIp_0.F10___MatrixInv33F_src.\nLet a_3 = shift_float32(a_2, 4).\nLet a_4 = shift_float32(a_2, 8).\nLet a_5 = shift_float32(a_2, 5).\nLet a_6 = shift_float32(a_2, 7).\nLet a_7 = sub_f32(mul_f32(Mf32_0[a_3], Mf32_0[a_4]),\n            mul_f32(Mf32_0[a_5], Mf32_0[a_6])).\nLet m = Mf32_0[a_1 <- a_7].\nLet a_8 = shift_float32(a_2, 2).\nLet a_9 = shift_float32(a_2, 1).\nLet m_1 = m[shift_float32(a, 1)\n            <- sub_f32(mul_f32(m[a_8], m[a_6]), mul_f32(m[a_9], m[a_4]))].\nLet m_2 = m_1[shift_float32(a, 2)\n            <- sub_f32(mul_f32(m_1[a_9], m_1[a_5]),\n                 mul_f32(m_1[a_8], m_1[a_3]))].\nLet a_10 = shift_float32(a_2, 6).\nLet a_11 = shift_float32(a_2, 3).\nLet a_12 = sub_f32(mul_f32(m_2[a_5], m_2[a_10]),\n             mul_f32(m_2[a_11], m_2[a_4])).\nLet m_3 = m_2[shift_float32(a, 3) <- a_12].\nLet a_13 = shift_float32(a_2, 0).\nLet m_4 = m_3[shift_float32(a, 4)\n            <- sub_f32(mul_f32(m_3[a_13], m_3[a_4]),\n                 mul_f32(m_3[a_8], m_3[a_10]))].\nLet m_5 = m_4[shift_float32(a, 5)\n            <- sub_f32(mul_f32(m_4[a_8], m_4[a_11]),\n                 mul_f32(m_4[a_13], m_4[a_5]))].\nLet a_14 = sub_f32(mul_f32(m_5[a_11], m_5[a_6]),\n             mul_f32(m_5[a_3], m_5[a_10])).\nLet m_6 = m_5[shift_float32(a, 6) <- a_14].\nLet m_7 = m_6[shift_float32(a, 7)\n            <- sub_f32(mul_f32(m_6[a_9], m_6[a_10]),\n                 mul_f32(m_6[a_13], m_6[a_6]))].\nLet m_8 = m_7[shift_float32(a, 8)\n            <- sub_f32(mul_f32(m_7[a_13], m_7[a_3]),\n                 mul_f32(m_7[a_9], m_7[a_11]))].\nLet a_15 = to_f64(of_f32(add_f32(add_f32(mul_f32(m_8[a_13], a_7),\n                                   mul_f32(m_8[a_9], a_12)),\n                           mul_f32(m_8[a_8], a_14)))).\nLet a_16 = pIp_0.F10___MatrixInv33F_ret.\nLet x = to_sint8(1 + i).\nAssume {\n  Type: is_sint8(i).\n  (* Heap *)\n  Type: (region(pIp_0.F10___MatrixInv33F_fun.base) <= 0) /\\\n      (region(a_2.base) <= 0) /\\ (region(a_16.base) <= 0) /\\\n      (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_13, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_16, 1).\n  Have: ({ Init_pIp_0 with Init_F10___MatrixInv33F_bAbleInv = true }) =\n      Init_pIp_0.\n  (* Else *)\n  Have: !lt_f64(to_f64((4722366482869645.0/4722366482869645213696)), a_15).\n  (* Else *)\n  Have: !lt_f64(a_15, to_f64((-4722366482869645.0/4722366482869645213696))).\n  (* Invariant *)\n  Have: (0 <= i) /\\ (i <= 8).\n}\nProve: (0 <= x) /\\ (x <= 8).\nProver Z3 4.8.12 returns Failed\nout of memory', 'Error found in file: Output/MatrixInv33F.c at line: 46', 'Error line content: /*@ loop invariant 0 <= i < 9;')
+
+Loop Invariant Results:
+- False
+- False
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+- True
+
+------------------------------------------------
+File Name: Input.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/Input.c (with preprocessing)
+[kernel:annot-error] Output/Input.c:11: Warning: 
+  pIp->mDSSData is not a pointer.. Ignoring logic specification of function InputFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: PeriodControl.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/PeriodControl.c (with preprocessing)
+[kernel] Output/PeriodControl.c:47: 
+  syntax error:
+  Location: between lines 47 and 48
+  45            pIp->countSate++;
+  46    
+  
+  47            /*@ loop invariant 0 <= pIp->countSate <= 0xFFFFFFF0 + 1; */
+  48            /*@ loop assigns pIp->countSate; */
+  
+  49            if (pIp->countSate > 0xFFFFFFF0)
+  50            {
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GetUartData.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GetUartData.c (with preprocessing)
+[kernel] Output/GetUartData.c:18: 
+  syntax error:
+  Location: between lines 18 and 19, before or at token: unsigned
+  16          loop assigns i, pIp->data[i];
+  17          loop variant pIp->len - i;
+  
+  18        */
+  19        unsigned int fifoCnt; 
+  
+  20        unsigned int i;      
+  21
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroStateGet.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GyroStateGet.c (with preprocessing)
+[kernel] Output/GyroStateGet.c:38: 
+  syntax error:
+  Location: between lines 38 and 39, before or at token: if
+  36          loop assigns i, pIp->wa[0..pIp->NumGyro - 1], pIp->stateFlag[0..pIp->NumGyro - 1];
+  37          loop variant pIp->NumGyro - i;
+  
+  38        */
+  39        if ( (gyroRecvData[0] == 0xEB) && (gyroRecvData[1] == 0x91) )
+  
+  40        {
+  41            for ( i = 0; i < pIp -> NumGyro; i++ )
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: JetDataGet.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/JetDataGet.c (with preprocessing)
+[kernel:annot-error] Output/JetDataGet.c:9: Warning: 
+  \result meaningless. Ignoring logic specification of function JetDataGetFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SwitchSS.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SwitchSS.c (with preprocessing)
+[kernel] Output/SwitchSS.c:15: 
+  syntax error:
+  Location: between lines 15 and 16
+  13        /*@
+  14            loop assigns \nothing;
+  
+  15        */
+  16        /*@ assert \valid(&pIp->mDSSData.stateFlag_A); */
+  
+  17        if (pIp -> mDSSData.stateFlag_A == 1) 
+  18        {
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModePitch.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SAMSubModePitch.c (with preprocessing)
+[kernel] Output/SAMSubModePitch.c:20: 
+  syntax error:
+  Location: between lines 20 and 21, before or at token: if
+  18          loop invariant pIp->pSDS->flgSP == 1 ==> pirawtmp == fabs(pIp->pSDS->piyaw);
+  19          loop assigns pirawtmp;
+  
+  20        */
+  21        if (pIp->pSDS->flgSP == 1)
+  
+  22        {
+  23            pirawtmp = fabs(pIp->pSDS->piyaw);
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SoftFaultProceedSP.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SoftFaultProceedSP.c (with preprocessing)
+[kernel] Output/SoftFaultProceedSP.c:19: 
+  syntax error:
+  Location: between lines 19 and 20, before or at token: switch
+  17            loop assigns pIp->mFWarning.countSPset;
+  18            loop variant 10 - pIp->mFWarning.countSPset;
+  
+  19        */
+  20        switch (pIp -> mFWarning.countSPset)
+  
+  21        {
+  22            case 5:
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: ThrABAutoChoose.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ThrABAutoChoose.c (with preprocessing)
+[kernel] Output/ThrABAutoChoose.c:16: 
+  syntax error:
+  Location: between lines 16 and 17, before or at token: if
+  14          loop invariant \valid(pIp);
+  15          loop assigns pIp->mThrDistribute.flgABChoose;
+  
+  16        */
+  17        if ((pIp -> mThrDistribute.stateFlag[0] == 1) &&
+  
+  18            (pIp -> mThrDistribute.stateFlag[1] == 1))
+  19        {
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: LimitFloat32.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/LimitFloat32.c (with preprocessing)
+[kernel:annot-error] Output/LimitFloat32.c:8: Warning: 
+  pIp->fin is not a pointer.. Ignoring logic specification of function LimitFloat32Fun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: DevControl.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/DevControl.c (with preprocessing)
+[kernel:annot-error] Output/DevControl.c:6: Warning: 
+  \result meaningless. Ignoring logic specification of function DevControlFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: Tr32Uint08.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/Tr32Uint08.c, line 7) in 'Tr32Uint08Fun':\nLet a = pIp_1.F10___Tr32Uint08_pA.\nLet x = Mint_1[a].\nLet a_1 = pIp_1.F10___Tr32Uint08_pB.\nLet x_1 = Mint_1[a_1].\nLet a_2 = pIp_1.F10___Tr32Uint08_pC.\nLet a_3 = pIp_1.F10___Tr32Uint08_ret.\nLet x_2 = pIp_0.F10___Tr32Uint08_uiresult.\nLet m = Mint_0[(pIp_0.F10___Tr32Uint08_ret) <- x_2].\nLet x_3 = m[pIp_0.F10___Tr32Uint08_pC].\nLet x_4 = m[pIp_0.F10___Tr32Uint08_pB].\nLet x_5 = m[pIp_0.F10___Tr32Uint08_pA].\nAssume {\n  Type: is_uint8(uitemp1_0) /\\ is_uint8(uitemp2_0) /\\ is_uint8(uitemp3_0) /\\\n      is_uint8(x_2) /\\ is_uint8(x_1) /\\ is_uint8(x) /\\ is_uint8(x_3) /\\\n      is_uint8(x_4) /\\ is_uint8(x_5).\n  (* Heap *)\n  Type: (region(pIp_1.F10___Tr32Uint08_fun.base) <= 0) /\\\n      (region(a_2.base) <= 0) /\\ (region(a_1.base) <= 0) /\\\n      (region(a.base) <= 0) /\\ (region(a_3.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 1) /\\ valid_rw(Malloc_0, a_1, 1) /\\\n      valid_rw(Malloc_0, a, 1) /\\ valid_rw(Malloc_0, a_3, 1).\n  If x = x_1\n  Then {\n    Have: Mint_1 = Mint_2.\n    If Mint_2[a] = Mint_2[a_2]\n    Then {\n      Have: Mint_2 = Mint_0.\n      Have: ({ pIp_1 with F10___Tr32Uint08_uiresult = Mint_0[a] }) = pIp_0.\n    }\n    Else {\n      Let x_6 = lor(uitemp1_0, lor(uitemp2_0, uitemp3_0)).\n      Let x_7 = Mint_3[a_2].\n      Let x_8 = Mint_3[a_1].\n      Let x_9 = Mint_3[a].\n      Have: Mint_2 = Mint_3.\n      Have: to_uint8(land(x_8, x_9)) = uitemp1_0.\n      Have: to_uint8(land(x_7, x_9)) = uitemp2_0.\n      Have: to_uint8(land(x_7, x_8)) = uitemp3_0.\n      Have: (({ Init_pIp_0 with Init_F10___Tr32Uint08_uiresult = true }) =\n             Init_pIp_0) /\\\n          (({ pIp_1 with F10___Tr32Uint08_uiresult = x_6 }) = pIp_0).\n      Have: Mint_3[a <- x_6][a_1 <- x_6][a_2 <- x_6] = Mint_0.\n    }\n  }\n  Else {\n    Have: Mint_1 = Mint_3.\n    Have: to_uint8(land(x_8, x_9)) = uitemp1_0.\n    Have: to_uint8(land(x_7, x_9)) = uitemp2_0.\n    Have: to_uint8(land(x_7, x_8)) = uitemp3_0.\n    Have: (({ Init_pIp_0 with Init_F10___Tr32Uint08_uiresult = true }) =\n           Init_pIp_0) /\\\n        (({ pIp_1 with F10___Tr32Uint08_uiresult = x_6 }) = pIp_0).\n    Have: Mint_3[a <- x_6][a_1 <- x_6][a_2 <- x_6] = Mint_0.\n  }\n}\nProve: x_2\n         = (if ((x_5 = x_3) & (x_5 = x_4)) then x_5 else lor(land(x_3, x_4),\n            lor(land(x_3, x_5), land(x_4, x_5)))).\nProver Z3 4.8.12 returns Timeout (Qed:14ms) (3s)", 'Error found in file: Output/Tr32Uint08.c at line: 7', 'Error line content: ensures *(pIp->ret) == ( (*(pIp->pA) == *(pIp->pB) && *(pIp->pA) == *(pIp->pC)) ? *(pIp->pA) :')
+
+Postcond Results:
+- False
+
+------------------------------------------------
+File Name: LimitCtrlAngleInput.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/LimitCtrlAngleInput.c (with preprocessing)
+[kernel:annot-error] Output/LimitCtrlAngleInput.c:8: Warning: 
+  In ACSL, there is no implicit conversion between a C array and a pointer. Either introduce an explicit cast or take the address of the first element of 
+  (pIp->pSA)->angle. Ignoring logic specification of function LimitCtrlAngleInputFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModeRoll.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SAMSubModeRoll.c (with preprocessing)
+[kernel] Output/SAMSubModeRoll.c:20: 
+  syntax error:
+  Location: between lines 20 and 21, before or at token: if
+  18          loop assigns tmproyaw;
+  19          loop variant 1;
+  
+  20        */
+  21        if (pIp->pSDS->flgSP == 0x1)
+  
+  22        {
+  23            tmproyaw = ABS(pIp->pSDS->royaw);
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: CalculateGyroDg.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/CalculateGyroDg.c (with preprocessing)
+[kernel:annot-error] Output/CalculateGyroDg.c:12: Warning: 
+  In ACSL, there is no implicit conversion between a C array and a pointer. Either introduce an explicit cast or take the address of the first element of 
+  (pIp->pGyroData)->Rtemp. Ignoring logic specification of function CalculateGyroDgFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: DSSDataGet.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/DSSDataGet.c (with preprocessing)
+[kernel:annot-error] Output/DSSDataGet.c:66: Warning: 
+  \result meaningless. Ignoring code annotation
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: common.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: ModeControl.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ModeControl.c (with preprocessing)
+[kernel] Output/ModeControl.c:32: 
+  syntax error:
+  Location: between lines 32 and 33, before or at token: if
+  30          loop assigns flgModetmp1, pIp->countMode;
+  31          loop variant 1;
+  
+  32        */
+  33        if (flgModetmp1 == SAM_DAMP)
+  
+  34        {
+  35            IPCREATE(SAMSubModeDamp, ipSAMSubModeDamp, .rate = &(pIp->mAttitude.rate[0]), .max =  0.15f, .countPublic = pIp-> countPublic, .countMode = pIp-> countMode, .flgMode =  SAM_DAMP);
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: ModPNHP.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ModPNHP.c (with preprocessing)
+[kernel:annot-error] Output/ModPNHP.c:5: Warning: 
+  unbound logic variable NULL. Ignoring logic specification of function ModPNHPFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModeDamp.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SAMSubModeDamp.c (with preprocessing)
+[kernel:annot-error] Output/SAMSubModeDamp.c:6: Warning: 
+  unbound logic variable NULL. Ignoring logic specification of function SAMSubModeDampFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: LimitCtrlRateInput.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/LimitCtrlRateInput.c, line 13) in 'LimitCtrlRateInputFun':\nLet a = pIp_1.F12___LimitCtrlRateInput_pSA.\nLet a_1 = pIp_1.F12___LimitCtrlRateInput_pSCtrl.\nLet a_2 = pIp_0.F12___LimitCtrlRateInput_pSCtrl.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_1.F12___LimitCtrlRateInput_fun.base) <= 0) /\\\n      (region(a.base) <= 0) /\\ (region(a_1.base) <= 0) /\\ linked(Malloc_0).\n  (* Goal *)\n  When: (0 <= i) /\\ (i <= 2).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 6).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 3).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_S7_TAG_CONTROLLERIN(a_1, 0), 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_float32(shiftfield_F6_TAG_ATTITUDE_PARA_rate(a), 0), 3).\n  (* Pre-condition *)\n  Have: .0 <= of_f32(pIp_1.F12___LimitCtrlRateInput_max).\n}\nProve: of_f32(Mf32_0\n                [shiftfield_F7_TAG_CONTROLLERIN_Ud(shift_S7_TAG_CONTROLLERIN(a_2,\n                                                     2))\n                <- Mf32_0[global(L_LimitFloat32_ret_2_52)]]\n                [shiftfield_F7_TAG_CONTROLLERIN_Ud(shift_S7_TAG_CONTROLLERIN(a_2,\n                                                     i))])\n         = of_f32(Mf32_1\n                    [shiftfield_F7_TAG_CONTROLLERIN_Ud(shift_S7_TAG_CONTROLLERIN(a_1,\n                                                         i))]).\nProver Z3 4.8.12 returns Failed\nout of memory", 'Error found in file: Output/LimitCtrlRateInput.c at line: 13', 'Error line content: ensures \\forall int i; 0 <= i < 3 ==> pIp->pSCtrl[i].Ud == \\old(pIp->pSCtrl[i].Ud);')
+
+Postcond Results:
+- False
+
+------------------------------------------------
+File Name: PseudoRateModulator.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/PseudoRateModulator.c (with preprocessing)
+[kernel:annot-error] Output/PseudoRateModulator.c:5: Warning: 
+  unbound logic variable NULL. Ignoring logic specification of function PseudoRateModulatorFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: DiviationToFloat.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/DiviationToFloat.c (with preprocessing)
+[kernel:annot-error] Output/DiviationToFloat.c:18: Warning: unexpected token ')'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: FaultJudgeProceed.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/FaultJudgeProceed.c (with preprocessing)
+[kernel] "/home/yangfp/AutoSpec-/Output/FaultJudgeProceed.c":42: User Error: 
+  Can't preprocess annotation: Preprocessor call exited with an error
+  Some annotations will be kept as is
+[kernel:annot-error] Output/FaultJudgeProceed.c:15: Warning: 
+  unexpected token 'if'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: MatrixTran.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/MatrixTran.c, line 12) in 'MatrixTranFun' (2/2):\nEffect at line 19\nLet x = pIp_0.F10___MatrixTran_ncol.\nLet x_1 = pIp_0.F10___MatrixTran_nrow.\nLet a = pIp_0.F10___MatrixTran_tran.\nLet x_2 = x_1 * x.\nLet a_1 = pIp_0.F10___MatrixTran_mat.\nAssume {\n  Type: is_uint8(x_1) /\\ is_uint8(x).\n  (* Heap *)\n  Type: (region(pIp_0.F10___MatrixTran_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a_1, 0), x_2).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a, 0), x_2).\n  (* Pre-condition *)\n  Have: 0 < x_1.\n  (* Pre-condition *)\n  Have: 0 < x.\n}\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/MatrixTran.c at line: 12', 'Error line content: assigns pIp->tran[0..(pIp->nrow * pIp->ncol - 1)];')
+
+Assertion Results:
+- True
+- False
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/MatrixTran.c, line 10) in 'MatrixTranFun':\nLet x = pIp_0.F10___MatrixTran_nrow.\nLet x_1 = pIp_1.F10___MatrixTran_ncol.\nLet x_2 = pIp_1.F10___MatrixTran_nrow.\nLet a = pIp_1.F10___MatrixTran_tran.\nLet x_3 = x_2 * x_1.\nLet a_1 = pIp_1.F10___MatrixTran_mat.\nLet x_4 = pIp_0.F10___MatrixTran_ncol.\nAssume {\n  Type: is_uint8(i_2) /\\ is_uint8(x_2) /\\ is_uint8(x_1) /\\ is_uint8(x).\n  (* Heap *)\n  Type: (region(pIp_1.F10___MatrixTran_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Goal *)\n  When: (0 <= i) /\\ (0 <= i_1) /\\ (i < x) /\\ (i_1 < x_4) /\\ is_sint32(i_1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a_1, 0), x_3).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a, 0), x_3).\n  (* Pre-condition *)\n  Have: 0 < x_2.\n  (* Pre-condition *)\n  Have: 0 < x_1.\n  (* Else *)\n  Have: x <= i_2.\n}\nProve: of_f32(Mf32_0\n                [shift_float32(pIp_0.F10___MatrixTran_tran, i + (i_1 * x))])\n         = of_f32(Mf32_0\n                    [shift_float32(pIp_0.F10___MatrixTran_mat, i_1\n                       + (i * x_4))]).\nProver Z3 4.8.12 returns Failed\nout of memory", 'Error found in file: Output/MatrixTran.c at line: 10', 'Error line content: ensures \\forall int i, j; 0 <= i < pIp->nrow && 0 <= j < pIp->ncol ==>')
+
+Postcond Results:
+- False
+
+------------------------------------------------
+File Name: CheckCal16.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/CheckCal16.c (with preprocessing)
+[kernel:annot-error] Output/CheckCal16.c:14: Warning: unexpected token '='
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: B_TcProcess.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/B_TcProcess.c (with preprocessing)
+[kernel:annot-error] Output/B_TcProcess.c:8: Warning: 
+  \result meaningless. Ignoring logic specification of function B_TcProcessFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
