@@ -1,0 +1,564 @@
+
+File Name: ThreeAxisController.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  100.00% (4/4)
+post_accuracy:  0.00%  (0/3)
+total_accuracy:  57.14% (4/7)
+llm_time: 4
+generate_time: 313.76 s
+verify_time: 67.59 s
+--------------------------------------------
+
+File Name: TripleFabsMax.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  100.00% (8/8)
+post_accuracy:  0.00%  (0/2)
+total_accuracy:  80.00% (8/10)
+llm_time: 4
+generate_time: 67.93 s
+verify_time: 14.75 s
+--------------------------------------------
+
+File Name: MatrixMulti.c
+synatax_accuracy: False
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  0.00% (0/0)
+llm_time: 4
+generate_time: 31.44 s
+verify_time: 0.14 s
+--------------------------------------------
+
+File Name: InitVar.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  100.00%  (17/17)
+total_accuracy:  100.00% (17/17)
+llm_time: 1
+generate_time: 18.95 s
+verify_time: 11.31 s
+--------------------------------------------
+
+File Name: AppInit.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  100.00%  (1/1)
+total_accuracy:  100.00% (1/1)
+llm_time: 1
+generate_time: 19.42 s
+verify_time: 14.27 s
+--------------------------------------------
+
+File Name: main.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/3)
+post_accuracy:  100.00%  (1/1)
+total_accuracy:  25.00% (1/4)
+llm_time: 4
+generate_time: 124.75 s
+verify_time: 27.85 s
+--------------------------------------------
+
+File Name: CalculateGyroRs.c
+synatax_accuracy: True
+loop_accuracy:  100.00% (4/4)
+assert_accuracy:  58.33% (7/12)
+post_accuracy:  100.00%  (1/1)
+total_accuracy:  70.59% (12/17)
+llm_time: 4
+generate_time: 330.54 s
+verify_time: 67.38 s
+--------------------------------------------
+
+File Name: CheckCal.c
+synatax_accuracy: False
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  0.00% (0/0)
+llm_time: 4
+generate_time: 19.50 s
+verify_time: 0.12 s
+--------------------------------------------
+
+File Name: SendUartData.c
+synatax_accuracy: True
+loop_accuracy:  50.00% (1/2)
+assert_accuracy:  100.00% (2/2)
+post_accuracy:  100.00%  (1/1)
+total_accuracy:  80.00% (4/5)
+llm_time: 4
+generate_time: 83.07 s
+verify_time: 14.58 s
+--------------------------------------------
+
+File Name: TMProcess.c
+synatax_accuracy: False
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  0.00% (0/0)
+llm_time: 4
+generate_time: 45.16 s
+verify_time: 0.15 s
+--------------------------------------------
+
+File Name: Tr32Float.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  100.00% (11/11)
+post_accuracy:  100.00%  (4/4)
+total_accuracy:  100.00% (15/15)
+llm_time: 2
+generate_time: 32.20 s
+verify_time: 1.71 s
+--------------------------------------------
+
+File Name: NoctrlJudge.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  66.67% (2/3)
+post_accuracy:  0.00%  (0/4)
+total_accuracy:  28.57% (2/7)
+llm_time: 4
+generate_time: 193.33 s
+verify_time: 38.40 s
+--------------------------------------------
+
+File Name: GyroChoose.c
+synatax_accuracy: True
+loop_accuracy:  75.00% (3/4)
+assert_accuracy:  100.00% (4/4)
+post_accuracy:  100.00%  (3/3)
+total_accuracy:  90.91% (10/11)
+llm_time: 4
+generate_time: 79.79 s
+verify_time: 14.83 s
+--------------------------------------------
+
+File Name: ThrusterCtrlLogic.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  100.00% (1/1)
+post_accuracy:  16.67%  (1/6)
+total_accuracy:  28.57% (2/7)
+llm_time: 4
+generate_time: 131.70 s
+verify_time: 28.39 s
+--------------------------------------------
+
+File Name: SAMSubModeCruise.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  100.00%  (2/2)
+total_accuracy:  100.00% (2/2)
+llm_time: 1
+generate_time: 9.62 s
+verify_time: 0.37 s
+--------------------------------------------
+
+File Name: GyroProceed.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  100.00%  (2/2)
+total_accuracy:  100.00% (2/2)
+llm_time: 1
+generate_time: 61.65 s
+verify_time: 51.13 s
+--------------------------------------------
+
+File Name: Inputproceed.c
+synatax_accuracy: False
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  0.00% (0/0)
+llm_time: 4
+generate_time: 37.04 s
+verify_time: 0.14 s
+--------------------------------------------
+
+File Name: SoftFaultJudgeSP.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  12.50%  (1/8)
+total_accuracy:  12.50% (1/8)
+llm_time: 4
+generate_time: 134.38 s
+verify_time: 24.73 s
+--------------------------------------------
+
+File Name: Delay.c
+synatax_accuracy: True
+loop_accuracy:  100.00% (1/1)
+assert_accuracy:  100.00% (2/2)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  100.00% (3/3)
+llm_time: 1
+generate_time: 6.99 s
+verify_time: 1.10 s
+--------------------------------------------
+
+File Name: LimitControllerInput.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/2)
+post_accuracy:  100.00%  (1/1)
+total_accuracy:  33.33% (1/3)
+llm_time: 4
+generate_time: 80.88 s
+verify_time: 27.57 s
+--------------------------------------------
+
+File Name: GyroPick.c
+synatax_accuracy: True
+loop_accuracy:  50.00% (1/2)
+assert_accuracy:  100.00% (2/2)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  75.00% (3/4)
+llm_time: 4
+generate_time: 88.39 s
+verify_time: 14.46 s
+--------------------------------------------
+
+File Name: TcProcess.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  100.00%  (1/1)
+total_accuracy:  100.00% (1/1)
+llm_time: 2
+generate_time: 24.68 s
+verify_time: 14.09 s
+--------------------------------------------
+
+File Name: MatrixInv33F.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/4)
+assert_accuracy:  100.00% (16/16)
+post_accuracy:  33.33%  (1/3)
+total_accuracy:  73.91% (17/23)
+llm_time: 4
+generate_time: 117.73 s
+verify_time: 20.23 s
+--------------------------------------------
+
+File Name: Input.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  100.00%  (1/1)
+total_accuracy:  100.00% (1/1)
+llm_time: 1
+generate_time: 38.35 s
+verify_time: 27.46 s
+--------------------------------------------
+
+File Name: PeriodControl.c
+synatax_accuracy: True
+loop_accuracy:  100.00% (1/1)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  100.00% (1/1)
+llm_time: 1
+generate_time: 75.30 s
+verify_time: 67.69 s
+--------------------------------------------
+
+File Name: GetUartData.c
+synatax_accuracy: True
+loop_accuracy:  100.00% (1/1)
+assert_accuracy:  100.00% (6/6)
+post_accuracy:  100.00%  (2/2)
+total_accuracy:  100.00% (9/9)
+llm_time: 1
+generate_time: 10.72 s
+verify_time: 1.95 s
+--------------------------------------------
+
+File Name: GyroStateGet.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/3)
+assert_accuracy:  50.00% (4/8)
+post_accuracy:  0.00%  (0/2)
+total_accuracy:  30.77% (4/13)
+llm_time: 4
+generate_time: 356.32 s
+verify_time: 81.60 s
+--------------------------------------------
+
+File Name: JetDataGet.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  50.00% (1/2)
+post_accuracy:  0.00%  (0/4)
+total_accuracy:  16.67% (1/6)
+llm_time: 4
+generate_time: 136.68 s
+verify_time: 27.64 s
+--------------------------------------------
+
+File Name: SwitchSS.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  100.00% (1/1)
+post_accuracy:  0.00%  (0/1)
+total_accuracy:  50.00% (1/2)
+llm_time: 4
+generate_time: 47.58 s
+verify_time: 11.14 s
+--------------------------------------------
+
+File Name: SAMSubModePitch.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  31.82% (7/22)
+post_accuracy:  0.00%  (0/3)
+total_accuracy:  28.00% (7/25)
+llm_time: 4
+generate_time: 293.69 s
+verify_time: 60.17 s
+--------------------------------------------
+
+File Name: SoftFaultProceedSP.c
+synatax_accuracy: False
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  0.00% (0/0)
+llm_time: 4
+generate_time: 25.82 s
+verify_time: 0.13 s
+--------------------------------------------
+
+File Name: ThrABAutoChoose.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  100.00%  (3/3)
+total_accuracy:  100.00% (3/3)
+llm_time: 1
+generate_time: 8.36 s
+verify_time: 0.97 s
+--------------------------------------------
+
+File Name: LimitFloat32.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  100.00% (2/2)
+post_accuracy:  25.00%  (1/4)
+total_accuracy:  50.00% (3/6)
+llm_time: 4
+generate_time: 102.40 s
+verify_time: 14.43 s
+--------------------------------------------
+
+File Name: DevControl.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/3)
+post_accuracy:  100.00%  (1/1)
+total_accuracy:  25.00% (1/4)
+llm_time: 4
+generate_time: 68.08 s
+verify_time: 14.03 s
+--------------------------------------------
+
+File Name: Tr32Uint08.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  100.00% (8/8)
+post_accuracy:  100.00%  (4/4)
+total_accuracy:  100.00% (12/12)
+llm_time: 1
+generate_time: 10.83 s
+verify_time: 2.09 s
+--------------------------------------------
+
+File Name: LimitCtrlAngleInput.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  42.86% (3/7)
+post_accuracy:  0.00%  (0/3)
+total_accuracy:  30.00% (3/10)
+llm_time: 4
+generate_time: 183.92 s
+verify_time: 35.25 s
+--------------------------------------------
+
+File Name: SAMSubModeRoll.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  27.27% (6/22)
+post_accuracy:  0.00%  (0/4)
+total_accuracy:  23.08% (6/26)
+llm_time: 4
+generate_time: 578.07 s
+verify_time: 79.96 s
+--------------------------------------------
+
+File Name: CalculateGyroDg.c
+synatax_accuracy: False
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  0.00% (0/0)
+llm_time: 4
+generate_time: 38.58 s
+verify_time: 0.12 s
+--------------------------------------------
+
+File Name: DSSDataGet.c
+synatax_accuracy: True
+loop_accuracy:  100.00% (1/1)
+assert_accuracy:  56.25% (9/16)
+post_accuracy:  0.00%  (0/12)
+total_accuracy:  34.48% (10/29)
+llm_time: 4
+generate_time: 348.73 s
+verify_time: 95.13 s
+--------------------------------------------
+
+File Name: common.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  0.00% (0/0)
+llm_time: 4
+generate_time: 43.07 s
+verify_time: 0.24 s
+--------------------------------------------
+
+File Name: ModeControl.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  20.00% (2/10)
+post_accuracy:  0.00%  (0/1)
+total_accuracy:  18.18% (2/11)
+llm_time: 4
+generate_time: 426.34 s
+verify_time: 68.00 s
+--------------------------------------------
+
+File Name: ModPNHP.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  100.00% (3/3)
+post_accuracy:  50.00%  (1/2)
+total_accuracy:  80.00% (4/5)
+llm_time: 4
+generate_time: 69.54 s
+verify_time: 13.39 s
+--------------------------------------------
+
+File Name: SAMSubModeDamp.c
+synatax_accuracy: False
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  0.00% (0/0)
+llm_time: 4
+generate_time: 31.51 s
+verify_time: 0.12 s
+--------------------------------------------
+
+File Name: LimitCtrlRateInput.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/10)
+post_accuracy:  0.00%  (0/3)
+total_accuracy:  0.00% (0/13)
+llm_time: 4
+generate_time: 370.50 s
+verify_time: 67.02 s
+--------------------------------------------
+
+File Name: PseudoRateModulator.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  100.00%  (3/3)
+total_accuracy:  100.00% (3/3)
+llm_time: 1
+generate_time: 15.74 s
+verify_time: 0.37 s
+--------------------------------------------
+
+File Name: DiviationToFloat.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  100.00% (2/2)
+post_accuracy:  0.00%  (0/2)
+total_accuracy:  50.00% (2/4)
+llm_time: 4
+generate_time: 126.92 s
+verify_time: 14.43 s
+--------------------------------------------
+
+File Name: FaultJudgeProceed.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  100.00%  (3/3)
+total_accuracy:  100.00% (3/3)
+llm_time: 2
+generate_time: 77.34 s
+verify_time: 35.00 s
+--------------------------------------------
+
+File Name: MatrixTran.c
+synatax_accuracy: True
+loop_accuracy:  50.00% (2/4)
+assert_accuracy:  100.00% (2/2)
+post_accuracy:  0.00%  (0/1)
+total_accuracy:  57.14% (4/7)
+llm_time: 4
+generate_time: 409.71 s
+verify_time: 28.34 s
+--------------------------------------------
+
+File Name: CheckCal16.c
+synatax_accuracy: False
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/0)
+post_accuracy:  0.00%  (0/0)
+total_accuracy:  0.00% (0/0)
+llm_time: 4
+generate_time: 18.18 s
+verify_time: 0.12 s
+--------------------------------------------
+
+File Name: B_TcProcess.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  100.00% (1/1)
+post_accuracy:  100.00%  (1/1)
+total_accuracy:  100.00% (2/2)
+llm_time: 1
+generate_time: 20.72 s
+verify_time: 14.05 s
+--------------------------------------------
+----------------------------------------------
+RESULT
+syntax_accuracy:84.00% (42/50) 
+loop_accuracy:  55.56%  (15/27) 
+assert_accuracy:  59.49% (116/195) 
+post_accuracy:  47.50% (57/120) 
+total_accuracy:  54.97% (188/342) 
+total_llm_time:  158
+total_generate_time: 5985.90 s
+total_verify_time: 1216.13 s
+average_llm_time:  3.16
+average_generate_time: 119.72 s
+average_verify_time: 24.32 s
+--------------------------------------------

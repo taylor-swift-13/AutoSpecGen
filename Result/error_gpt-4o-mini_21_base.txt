@@ -1,0 +1,1581 @@
+File Name: ThreeAxisController.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ThreeAxisController.c (with preprocessing)
+[kernel:annot-error] Output/ThreeAxisController.c:12: Warning: 
+  unexpected token 'LimitFloat32'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: TripleFabsMax.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/TripleFabsMax.c (with preprocessing)
+[kernel:annot-error] Output/TripleFabsMax.c:12: Warning: 
+  unbound logic function fabs. Ignoring logic specification of function TripleFabsMaxFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: MatrixMulti.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/MatrixMulti.c (with preprocessing)
+[kernel:annot-error] Output/MatrixMulti.c:15: Warning: unexpected token '='
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: InitVar.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/InitVar.c, line 5) in 'InitVarFun' (2/10):\nEffect at line 48\nLet a = addr_of_int(32000).\nLet a_1 = global(G_pIp_31).\nLet a_2 = shiftfield_F10___InitVar_mGyroData(a_1).\nLet a_3 = shiftfield_F10___InitVar_mFWarning(a_1).\nLet a_4 = shiftfield_F10___InitVar_mModulator(a_1).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a, 1).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n}\nProve: (shiftfield_F10___InitVar_countInt32ms(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countMode(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countPublic(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countSate(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flg160INT(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgGryoCalc(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgPRSAM(a_1) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus0(a_2) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus1(a_2) = a) \\/\n    (shiftfield_F3_TAG_UPS_2MS_wPulse(shiftfield_F10___InitVar_mThrDistribute(a_1)) =\n     a) \\/ (shiftfield_F4_TAG_FAULT_WARNING_countSPLost(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPSeen(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPset(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_3) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                0)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                1)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                2)) = a).\nProver Z3 4.8.12 returns Timeout (Qed:7ms) (3s)", 'Error found in file: Output/InitVar.c at line: 5', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 5) in 'InitVarFun' (3/10):\nEffect at line 48\nLet a = addr_of_int(32340).\nLet a_1 = global(G_pIp_31).\nLet a_2 = shiftfield_F10___InitVar_mGyroData(a_1).\nLet a_3 = shiftfield_F10___InitVar_mFWarning(a_1).\nLet a_4 = shiftfield_F10___InitVar_mModulator(a_1).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a, 1).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n}\nProve: (shiftfield_F10___InitVar_countInt32ms(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countMode(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countPublic(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countSate(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flg160INT(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgGryoCalc(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgPRSAM(a_1) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus0(a_2) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus1(a_2) = a) \\/\n    (shiftfield_F3_TAG_UPS_2MS_wPulse(shiftfield_F10___InitVar_mThrDistribute(a_1)) =\n     a) \\/ (shiftfield_F4_TAG_FAULT_WARNING_countSPLost(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPSeen(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPset(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_3) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                0)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                1)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                2)) = a).\nProver Z3 4.8.12 returns Timeout (Qed:7ms) (3s)", 'Error found in file: Output/InitVar.c at line: 5', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 5) in 'InitVarFun' (4/10):\nEffect at line 48\nLet a = addr_of_int(32680).\nLet a_1 = global(G_pIp_31).\nLet a_2 = shiftfield_F10___InitVar_mGyroData(a_1).\nLet a_3 = shiftfield_F10___InitVar_mFWarning(a_1).\nLet a_4 = shiftfield_F10___InitVar_mModulator(a_1).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a, 1).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n}\nProve: (shiftfield_F10___InitVar_countInt32ms(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countMode(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countPublic(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countSate(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flg160INT(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgGryoCalc(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgPRSAM(a_1) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus0(a_2) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus1(a_2) = a) \\/\n    (shiftfield_F3_TAG_UPS_2MS_wPulse(shiftfield_F10___InitVar_mThrDistribute(a_1)) =\n     a) \\/ (shiftfield_F4_TAG_FAULT_WARNING_countSPLost(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPSeen(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPset(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_3) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                0)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                1)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                2)) = a).\nProver Z3 4.8.12 returns Timeout (Qed:8ms) (3s)", 'Error found in file: Output/InitVar.c at line: 5', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 5) in 'InitVarFun' (5/10):\nEffect at line 49\nLet a = addr_of_int(32024).\nLet a_1 = global(G_pIp_31).\nLet a_2 = shiftfield_F10___InitVar_mGyroData(a_1).\nLet a_3 = shiftfield_F10___InitVar_mFWarning(a_1).\nLet a_4 = shiftfield_F10___InitVar_mModulator(a_1).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a, 1).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n}\nProve: (shiftfield_F10___InitVar_countInt32ms(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countMode(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countPublic(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countSate(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flg160INT(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgGryoCalc(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgPRSAM(a_1) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus0(a_2) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus1(a_2) = a) \\/\n    (shiftfield_F3_TAG_UPS_2MS_wPulse(shiftfield_F10___InitVar_mThrDistribute(a_1)) =\n     a) \\/ (shiftfield_F4_TAG_FAULT_WARNING_countSPLost(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPSeen(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPset(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_3) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                0)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                1)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                2)) = a).\nProver Z3 4.8.12 returns Timeout (Qed:12ms) (3s)", 'Error found in file: Output/InitVar.c at line: 5', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 5) in 'InitVarFun' (6/10):\nEffect at line 49\nLet a = addr_of_int(32364).\nLet a_1 = global(G_pIp_31).\nLet a_2 = shiftfield_F10___InitVar_mGyroData(a_1).\nLet a_3 = shiftfield_F10___InitVar_mFWarning(a_1).\nLet a_4 = shiftfield_F10___InitVar_mModulator(a_1).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a, 1).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n}\nProve: (shiftfield_F10___InitVar_countInt32ms(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countMode(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countPublic(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countSate(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flg160INT(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgGryoCalc(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgPRSAM(a_1) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus0(a_2) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus1(a_2) = a) \\/\n    (shiftfield_F3_TAG_UPS_2MS_wPulse(shiftfield_F10___InitVar_mThrDistribute(a_1)) =\n     a) \\/ (shiftfield_F4_TAG_FAULT_WARNING_countSPLost(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPSeen(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPset(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_3) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                0)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                1)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                2)) = a).\nProver Z3 4.8.12 returns Timeout (Qed:14ms) (3s)", 'Error found in file: Output/InitVar.c at line: 5', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 5) in 'InitVarFun' (7/10):\nEffect at line 49\nLet a = addr_of_int(32704).\nLet a_1 = global(G_pIp_31).\nLet a_2 = shiftfield_F10___InitVar_mGyroData(a_1).\nLet a_3 = shiftfield_F10___InitVar_mFWarning(a_1).\nLet a_4 = shiftfield_F10___InitVar_mModulator(a_1).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a, 1).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n}\nProve: (shiftfield_F10___InitVar_countInt32ms(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countMode(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countPublic(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countSate(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flg160INT(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgGryoCalc(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgPRSAM(a_1) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus0(a_2) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus1(a_2) = a) \\/\n    (shiftfield_F3_TAG_UPS_2MS_wPulse(shiftfield_F10___InitVar_mThrDistribute(a_1)) =\n     a) \\/ (shiftfield_F4_TAG_FAULT_WARNING_countSPLost(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPSeen(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPset(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_3) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                0)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                1)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                2)) = a).\nProver Z3 4.8.12 returns Timeout (Qed:14ms) (3s)", 'Error found in file: Output/InitVar.c at line: 5', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 5) in 'InitVarFun' (8/10):\nEffect at line 50\nLet a = addr_of_int(32028).\nLet a_1 = global(G_pIp_31).\nLet a_2 = shiftfield_F10___InitVar_mGyroData(a_1).\nLet a_3 = shiftfield_F10___InitVar_mFWarning(a_1).\nLet a_4 = shiftfield_F10___InitVar_mModulator(a_1).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a, 1).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n}\nProve: (shiftfield_F10___InitVar_countInt32ms(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countMode(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countPublic(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countSate(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flg160INT(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgGryoCalc(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgPRSAM(a_1) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus0(a_2) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus1(a_2) = a) \\/\n    (shiftfield_F3_TAG_UPS_2MS_wPulse(shiftfield_F10___InitVar_mThrDistribute(a_1)) =\n     a) \\/ (shiftfield_F4_TAG_FAULT_WARNING_countSPLost(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPSeen(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPset(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_3) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                0)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                1)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                2)) = a).\nProver Z3 4.8.12 returns Timeout (Qed:16ms) (3s)", 'Error found in file: Output/InitVar.c at line: 5', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 5) in 'InitVarFun' (9/10):\nEffect at line 50\nLet a = addr_of_int(32368).\nLet a_1 = global(G_pIp_31).\nLet a_2 = shiftfield_F10___InitVar_mGyroData(a_1).\nLet a_3 = shiftfield_F10___InitVar_mFWarning(a_1).\nLet a_4 = shiftfield_F10___InitVar_mModulator(a_1).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a, 1).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n}\nProve: (shiftfield_F10___InitVar_countInt32ms(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countMode(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countPublic(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countSate(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flg160INT(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgGryoCalc(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgPRSAM(a_1) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus0(a_2) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus1(a_2) = a) \\/\n    (shiftfield_F3_TAG_UPS_2MS_wPulse(shiftfield_F10___InitVar_mThrDistribute(a_1)) =\n     a) \\/ (shiftfield_F4_TAG_FAULT_WARNING_countSPLost(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPSeen(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPset(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_3) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                0)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                1)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                2)) = a).\nProver Z3 4.8.12 returns Timeout (Qed:18ms) (3s)", 'Error found in file: Output/InitVar.c at line: 5', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+- ("Goal Assigns (file Output/InitVar.c, line 5) in 'InitVarFun' (10/10):\nEffect at line 50\nLet a = addr_of_int(32708).\nLet a_1 = global(G_pIp_31).\nLet a_2 = shiftfield_F10___InitVar_mGyroData(a_1).\nLet a_3 = shiftfield_F10___InitVar_mFWarning(a_1).\nLet a_4 = shiftfield_F10___InitVar_mModulator(a_1).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a, 1).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n}\nProve: (shiftfield_F10___InitVar_countInt32ms(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countMode(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countPublic(a_1) = a) \\/\n    (shiftfield_F10___InitVar_countSate(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flg160INT(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgGryoCalc(a_1) = a) \\/\n    (shiftfield_F10___InitVar_flgPRSAM(a_1) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus0(a_2) = a) \\/\n    (shiftfield_F1_TAG_DIGITAL_GYRO_DATA_gyroStatus1(a_2) = a) \\/\n    (shiftfield_F3_TAG_UPS_2MS_wPulse(shiftfield_F10___InitVar_mThrDistribute(a_1)) =\n     a) \\/ (shiftfield_F4_TAG_FAULT_WARNING_countSPLost(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPSeen(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countSPset(a_3) = a) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_3) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                0)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                1)) = a) \\/\n    (shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(shift_S2_TAG_FALSE_RATE_MODULATOR(a_4,\n                                                2)) = a).\nProver Z3 4.8.12 returns Unknown (Qed:21ms)", 'Error found in file: Output/InitVar.c at line: 5', 'Error line content: assigns pIp->flg160INT, pIp->flgPRSAM,')
+
+Assertion Results:
+- True
+- False
+- False
+- False
+- False
+- False
+- False
+- False
+- False
+- False
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/InitVar.c, line 20) in 'InitVarFun':\nLet a = shiftfield_F10___InitVar_countInt32ms(global(G_pIp_31)).\nLet x = Mint_0[a <- 0][addr_of_int(32000) <- v][addr_of_int(32340) <- v_1]\n          [addr_of_int(32680) <- v_2][a].\nAssume { Type: is_uint8(x). (* Pre-condition *) Have: G_pIp_31 != 0. }\nProve: x = 0.\nProver Z3 4.8.12 returns Unknown (Qed:27ms)", 'Error found in file: Output/InitVar.c at line: 20', 'Error line content: ensures pIp->countInt32ms == 0;')
+
+Postcond Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- False
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+
+------------------------------------------------
+File Name: AppInit.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/AppInit.c (with preprocessing)
+[kernel] Output/AppInit.c:6: User Error: 
+  Cannot find field data in type struct __AppInit
+  4     #include "AppInit.h"
+  5     
+  
+  6     /*@ requires pIp != \null; 
+  7         ensures \true;  // No meaningful result to ensure
+  8         ensures \forall int i; 0 <= i < 4 ==> pIp->data[i] == \old(pIp->data[i]); */
+  
+  9     void AppInitFun(AppInit *pIp)
+  10    {
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: main.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ('Goal Assertion (file Output/main.c, line 20):\nLet a = shiftfield_F12___main_ret(global(G_pIp_41)).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_1) /\\ framed(Mptr_1).\n  (* Pre-condition *)\n  Have: G_pIp_41 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_1, Mptr_1[a], 1).\n}\nProve: valid_rw(Malloc_0, Mptr_0[a], 1).\nProver Z3 4.8.12 returns Timeout (Qed:2ms) (3s)', 'Error found in file: Output/main.c at line: 20', 'Error line content: /*@ assert \\valid(pIp->ret); */')
+- ("Goal Assigns (file Output/main.c, line 8) in 'mainFun' (1/3):\nEffect at line 14\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_41 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          Mptr_0[shiftfield_F12___main_ret(global(G_pIp_41))], 1).\n}\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/main.c at line: 8', 'Error line content: assigns *(pIp->ret);')
+- ("Goal Assigns (file Output/main.c, line 8) in 'mainFun' (2/3):\nEffect at line 18\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_41 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          Mptr_0[shiftfield_F12___main_ret(global(G_pIp_41))], 1).\n}\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/main.c at line: 8', 'Error line content: assigns *(pIp->ret);')
+- ("Goal Assigns (file Output/main.c, line 8) in 'mainFun' (3/3):\nEffect at line 21\nLet a = shiftfield_F12___main_ret(global(G_pIp_41)).\nLet a_1 = Mptr_0[a].\nLet a_2 = Mptr_1[a].\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_1).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_1, 1).\n  (* Pre-condition *)\n  Have: G_pIp_41 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 1).\n  (* Assertion *)\n  Have: valid_rw(Malloc_1, a_1, 1).\n}\nProve: a_1 = a_2.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/main.c at line: 8', 'Error line content: assigns *(pIp->ret);')
+
+Assertion Results:
+- True
+- True
+- False
+- False
+- False
+- False
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: CalculateGyroRs.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/CalculateGyroRs.c (with preprocessing)
+[kernel:annot-error] Output/CalculateGyroRs.c:8: Warning: 
+  unbound logic variable NULL. Ignoring logic specification of function CalculateGyroRsFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: CheckCal.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/CheckCal.c (with preprocessing)
+[kernel:annot-error] Output/CheckCal.c:22: Warning: unexpected token '='
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SendUartData.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SendUartData.c (with preprocessing)
+[kernel] Output/SendUartData.c:18: 
+  syntax error:
+  Location: between lines 18 and 19, before or at token: unsigned
+  16            loop assigns i; 
+  17            loop variant pIp->len - i; 
+  
+  18        */
+  19        unsigned int i; // Changed from 'unint32' to 'unsigned int'
+  
+  20        for (i = 0; i < pIp -> len; i++)
+  21        {
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: TMProcess.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/TMProcess.c (with preprocessing)
+[kernel:annot-error] Output/TMProcess.c:7: Warning: 
+  unbound logic variable NULL. Ignoring logic specification of function TMProcessFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: Tr32Float.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/Tr32Float.c, line 10) in 'Tr32FloatFun' (7/11):\nEffect at line 33\nLet a = global(G_pIp_31).\nLet a_1 = Mptr_0[shiftfield_F10___Tr32Float_ret(a)].\nLet a_2 = Mptr_0[shiftfield_F10___Tr32Float_pC(a)].\nLet a_3 = Mptr_0[shiftfield_F10___Tr32Float_pB(a)].\nLet a_4 = Mptr_0[shiftfield_F10___Tr32Float_pA(a)].\nLet a_5 = shiftfield_F8_TAG_DATA_TYPE_CONVERT_ui32(shiftfield_F10___Tr32Float_ui2f(a)).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1).\n}\nProve: (a_4 = a_5) \\/ (a_3 = a_5) \\/ (a_2 = a_5) \\/ (a_1 = a_5).\nProver Z3 4.8.12 returns Timeout (Qed:2ms) (3s)", 'Error found in file: Output/Tr32Float.c at line: 10', 'Error line content: assigns *(pIp->pA), *(pIp->pB), *(pIp->pC), *(pIp->ret);')
+
+Assertion Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- False
+- True
+- True
+- True
+- True
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/Tr32Float.c, line 11) in 'Tr32FloatFun':\nLet a = global(G_pIp_31).\nLet a_1 = Mptr_0[shiftfield_F10___Tr32Float_ret(a)].\nLet a_2 = Mptr_0[shiftfield_F10___Tr32Float_pC(a)].\nLet a_3 = Mptr_0[shiftfield_F10___Tr32Float_pB(a)].\nLet a_4 = Mptr_0[shiftfield_F10___Tr32Float_pA(a)].\nLet a_5 = shiftfield_F8_TAG_DATA_TYPE_CONVERT_flt32(shiftfield_F10___Tr32Float_ui2f(a)).\nLet m = Mf32_0[a_4 <- Mf32_0[a_5]].\nLet m_1 = m[a_3 <- m[a_5]].\nLet m_2 = m_1[a_2 <- m_1[a_5]].\nLet m_3 = m_2[a_1 <- m_2[a_5]].\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1).\n}\nProve: of_f32(m_3[a_3]) = of_f32(m_3[a_4]).\nProver Z3 4.8.12 returns Timeout (Qed:7ms) (2.5s)", 'Error found in file: Output/Tr32Float.c at line: 11', 'Error line content: ensures *(pIp->pA) == *(pIp->pB);')
+- ("Goal Post-condition (file Output/Tr32Float.c, line 12) in 'Tr32FloatFun':\nLet a = global(G_pIp_31).\nLet a_1 = Mptr_0[shiftfield_F10___Tr32Float_ret(a)].\nLet a_2 = Mptr_0[shiftfield_F10___Tr32Float_pC(a)].\nLet a_3 = Mptr_0[shiftfield_F10___Tr32Float_pB(a)].\nLet a_4 = Mptr_0[shiftfield_F10___Tr32Float_pA(a)].\nLet a_5 = shiftfield_F8_TAG_DATA_TYPE_CONVERT_flt32(shiftfield_F10___Tr32Float_ui2f(a)).\nLet m = Mf32_0[a_4 <- Mf32_0[a_5]].\nLet m_1 = m[a_3 <- m[a_5]].\nLet m_2 = m_1[a_2 <- m_1[a_5]].\nLet m_3 = m_2[a_1 <- m_2[a_5]].\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1).\n}\nProve: of_f32(m_3[a_2]) = of_f32(m_3[a_3]).\nProver Z3 4.8.12 returns Timeout (Qed:6ms) (2.5s)", 'Error found in file: Output/Tr32Float.c at line: 12', 'Error line content: ensures *(pIp->pB) == *(pIp->pC);')
+- ("Goal Post-condition (file Output/Tr32Float.c, line 13) in 'Tr32FloatFun':\nLet a = global(G_pIp_31).\nLet a_1 = Mptr_0[shiftfield_F10___Tr32Float_ret(a)].\nLet a_2 = Mptr_0[shiftfield_F10___Tr32Float_pC(a)].\nLet a_3 = Mptr_0[shiftfield_F10___Tr32Float_pB(a)].\nLet a_4 = Mptr_0[shiftfield_F10___Tr32Float_pA(a)].\nLet a_5 = shiftfield_F8_TAG_DATA_TYPE_CONVERT_flt32(shiftfield_F10___Tr32Float_ui2f(a)).\nLet m = Mf32_0[a_4 <- Mf32_0[a_5]].\nLet m_1 = m[a_3 <- m[a_5]].\nLet m_2 = m_1[a_2 <- m_1[a_5]].\nLet m_3 = m_2[a_1 <- m_2[a_5]].\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1).\n}\nProve: of_f32(m_3[a_2]) = of_f32(m_3[a_4]).\nProver Z3 4.8.12 returns Timeout (Qed:7ms) (2.5s)", 'Error found in file: Output/Tr32Float.c at line: 13', 'Error line content: ensures *(pIp->pA) == *(pIp->pC);')
+- ("Goal Post-condition (file Output/Tr32Float.c, line 14) in 'Tr32FloatFun':\nLet a = global(G_pIp_31).\nLet a_1 = Mptr_0[shiftfield_F10___Tr32Float_ret(a)].\nLet a_2 = Mptr_0[shiftfield_F10___Tr32Float_pC(a)].\nLet a_3 = Mptr_0[shiftfield_F10___Tr32Float_pB(a)].\nLet a_4 = Mptr_0[shiftfield_F10___Tr32Float_pA(a)].\nLet a_5 = shiftfield_F8_TAG_DATA_TYPE_CONVERT_flt32(shiftfield_F10___Tr32Float_ui2f(a)).\nLet m = Mf32_0[a_4 <- Mf32_0[a_5]].\nLet m_1 = m[a_3 <- m[a_5]].\nLet m_2 = m_1[a_2 <- m_1[a_5]].\nLet a_6 = m_2[a_5].\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1).\n}\nProve: of_f32(m_2[a_1 <- a_6][a_5]) = of_f32(a_6).\nProver Z3 4.8.12 returns Timeout (Qed:7ms) (2.5s)", 'Error found in file: Output/Tr32Float.c at line: 14', 'Error line content: ensures *(pIp->ret) == pIp->ui2f.flt32;')
+
+Postcond Results:
+- False
+- False
+- False
+- False
+
+------------------------------------------------
+File Name: NoctrlJudge.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/NoctrlJudge.c (with preprocessing)
+[kernel:annot-error] Output/NoctrlJudge.c:7: Warning: 
+  \result meaningless. Ignoring logic specification of function NoctrlJudgeFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroChoose.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GyroChoose.c (with preprocessing)
+[kernel:annot-error] Output/GyroChoose.c:13: Warning: unexpected token '='
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: ThrusterCtrlLogic.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ThrusterCtrlLogic.c (with preprocessing)
+[kernel:annot-error] Output/ThrusterCtrlLogic.c:7: Warning: 
+  unbound logic function old. Ignoring logic specification of function ThrusterCtrlLogicFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModeCruise.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SAMSubModeCruise.c (with preprocessing)
+[kernel] Output/SAMSubModeCruise.c:13: 
+  Invalid symbol:
+  Location: line 13, between columns 26 and 27, before or at token: \
+  11    	if (pIp -> countMode == 4000)
+  12    	{
+  13    		pIp -> mFWarning.CWsp = \true ;
+                                  ^
+  14    	}
+  15
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroProceed.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GyroProceed.c (with preprocessing)
+[kernel:annot-error] Output/GyroProceed.c:11: Warning: 
+  pIp->mGyroData is not a pointer.. Ignoring logic specification of function GyroProceedFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: Inputproceed.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/Inputproceed.c (with preprocessing)
+[kernel:annot-error] Output/Inputproceed.c:9: Warning: 
+  unbound logic variable flgModetmp. Ignoring logic specification of function InputproceedFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SoftFaultJudgeSP.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SoftFaultJudgeSP.c (with preprocessing)
+[kernel] Output/SoftFaultJudgeSP.c:37: 
+  Invalid symbol:
+  Location: line 37, between columns 31 and 32, before or at token: \
+  35        if (pIp -> mFWarning.countSPLost > 33750)
+  36        {
+  37            pIp -> mFWarning.Wsp = \true ;
+                                       ^
+  38            pIp -> mFWarning.countSPLost = 0 ;
+  39            pIp -> mFWarning.countSPset = 0 ;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: Delay.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns nothing in 'DelayFun' (2/2):\nEffect at line 13\nLet x = Mint_0[shiftfield_F10___Delay_delaytime(global(G_pIp_31))].\nAssume {\n  Type: is_uint32(x).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: 0 <= x.\n}\nProve: false.\nProver Z3 4.8.12 returns Unknown", None, None)
+
+Assertion Results:
+- True
+- False
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: LimitControllerInput.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/LimitControllerInput.c (with preprocessing)
+[kernel:annot-error] Output/LimitControllerInput.c:9: Warning: 
+  pIp->mAttitude is not a pointer.. Ignoring logic specification of function LimitControllerInputFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroPick.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GyroPick.c (with preprocessing)
+[kernel:annot-error] Output/GyroPick.c:33: Warning: unexpected token ''
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: TcProcess.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/TcProcess.c (with preprocessing)
+[kernel:annot-error] Output/TcProcess.c:10: Warning: unexpected token 'tcaData'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: MatrixInv33F.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/MatrixInv33F.c (with preprocessing)
+[kernel:annot-error] Output/MatrixInv33F.c:15: Warning: unexpected token 'ghost'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: Input.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/Input.c (with preprocessing)
+[kernel:annot-error] Output/Input.c:18: Warning: 
+  unexpected token 'ipGyroStateGet'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: PeriodControl.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GetUartData.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GetUartData.c (with preprocessing)
+[kernel:annot-error] Output/GetUartData.c:11: Warning: 
+  unbound logic variable fifoCnt. Ignoring logic specification of function GetUartDataFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroStateGet.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GyroStateGet.c (with preprocessing)
+[kernel] Output/GyroStateGet.c:22: 
+  syntax error:
+  Location: between lines 22 and 23, before or at token: unsigned
+  20            loop assigns i, pIp->wa[0..pIp->NumGyro - 1], pIp->stateFlag[0..pIp->NumGyro - 1];
+  21            loop variant pIp->NumGyro - i;
+  
+  22        */
+  23        unsigned int i;
+  
+  24        unsigned char gyroRecvData[30];
+  25        unsigned char gyroSendData[2];
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: JetDataGet.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/JetDataGet.c, line 7) in 'JetDataGetFun':\nLet a = shiftfield_F3_TAG_UPS_2MS_stateFlag(shiftfield_F11___JetDataGet_mThrDistribute(\n                                              global(G_pIp_36))).\nLet x = Mint_0[shift_uint8(a, 0)].\nAssume {\n  Type: is_uint8(x) /\\ is_uint8(Mint_0[shift_uint8(a, 1)]).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n}\nProve: bit_test(w, 2) <-> (x != 0).\nProver Z3 4.8.12 returns Timeout (Qed:0.93ms) (3s)", 'Error found in file: Output/JetDataGet.c at line: 7', 'Error line content: ensures pIp->mThrDistribute.stateFlag[0] == ((ADDR_READ(0xE000) & 0x4) != 0);')
+- ("Goal Post-condition (file Output/JetDataGet.c, line 8) in 'JetDataGetFun':\nLet a = shiftfield_F3_TAG_UPS_2MS_stateFlag(shiftfield_F11___JetDataGet_mThrDistribute(\n                                              global(G_pIp_36))).\nLet x = Mint_0[shift_uint8(a, 1)].\nAssume {\n  Type: is_uint8(Mint_0[shift_uint8(a, 0)]) /\\ is_uint8(x).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n}\nProve: bit_test(w, 3) <-> (x != 0).\nProver Z3 4.8.12 returns Timeout (Qed:0.89ms) (3s)", 'Error found in file: Output/JetDataGet.c at line: 8', 'Error line content: ensures pIp->mThrDistribute.stateFlag[1] == ((ADDR_READ(0xE000) & 0x8) != 0);')
+
+Postcond Results:
+- False
+- False
+
+------------------------------------------------
+File Name: SwitchSS.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SwitchSS.c (with preprocessing)
+[kernel:annot-error] Output/SwitchSS.c:6: Warning: 
+  Assignment operators not allowed in annotations.
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModePitch.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SAMSubModePitch.c (with preprocessing)
+[kernel:annot-error] Output/SAMSubModePitch.c:15: Warning: 
+  unbound logic variable pirawtmp. Ignoring logic specification of function SAMSubModePitchFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SoftFaultProceedSP.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SoftFaultProceedSP.c (with preprocessing)
+[kernel] Output/SoftFaultProceedSP.c:32: 
+  syntax error:
+  Location: line 32, between columns 11 and 12, before or at token: ipSwitchSS
+  30        {
+  31    	    case 5:
+  32    			IPCREATE(SwitchSS, ipSwitchSS);
+                   ^
+  33    			IPCALL(ipSwitchSS);
+  34    			break ;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: ThrABAutoChoose.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+- True
+- True
+
+------------------------------------------------
+File Name: LimitFloat32.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/LimitFloat32.c, line 11) in 'LimitFloat32Fun':\nLet a = global(G_pIp_31).\nLet a_1 = shiftfield_F10___LimitFloat32_fbound(a).\nLet a_2 = Mf32_1[a_1].\nLet a_3 = shiftfield_F10___LimitFloat32_fin(a).\nLet a_4 = Mptr_0[shiftfield_F10___LimitFloat32_ret(a)].\nLet a_5 = shiftfield_F10___LimitFloat32_fvalue(a).\nLet m = Mf32_0[a_4 <- Mf32_0[a_5]].\nLet r = of_f32(m[a_1]).\nLet r_1 = of_f32(m[a_3]).\nLet r_2 = of_f32(m[a_5]).\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a_4, 0), 1).\n  (* Pre-condition *)\n  Have: .0 <= of_f32(a_2).\n  If lt_f32(a_2, Mf32_1[a_3])\n  Then { Have: Mf32_1 = Mf32_2. Have: Mf32_2[a_5 <- Mf32_2[a_1]] = Mf32_0. }\n  Else {\n    Have: Mf32_1 = Mf32_3.\n    If lt_f32(Mf32_3[a_3], neg_f32(Mf32_3[a_1]))\n    Then {\n      Have: Mf32_3 = Mf32_4.\n      Have: Mf32_4[a_5 <- neg_f32(Mf32_4[a_1])] = Mf32_0.\n    }\n    Else { Have: Mf32_3 = Mf32_5. Have: Mf32_5[a_5 <- Mf32_5[a_3]] = Mf32_0.\n    }\n  }\n}\nProve: if (r < r_1) then (r_2 = r)\n       else (if ((r + r_1) < .0) then ((r + r_2) = .0) else (r_2 = r_1)).\nProver Z3 4.8.12 returns Timeout (Qed:13ms) (2.6s)", 'Error found in file: Output/LimitFloat32.c at line: 11', 'Error line content: ensures pIp->fvalue == (pIp->fin > pIp->fbound ? pIp->fbound :')
+- ("Goal Post-condition (file Output/LimitFloat32.c, line 13) in 'LimitFloat32Fun':\nLet a = global(G_pIp_31).\nLet a_1 = Mf32_1[shiftfield_F10___LimitFloat32_fbound(a)].\nLet a_2 = Mptr_0[shiftfield_F10___LimitFloat32_ret(a)].\nLet a_3 = shiftfield_F10___LimitFloat32_fvalue(a).\nLet a_4 = Mf32_0[a_3].\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a_2, 0), 1).\n  (* Pre-condition *)\n  Have: .0 <= of_f32(a_1).\n  If lt_f32(a_1, Mf32_1[shiftfield_F10___LimitFloat32_fin(a)])\n  Then {\n    Have: Mf32_1 = Mf32_2.\n    Have: Mf32_2[a_3 <- Mf32_2[shiftfield_F10___LimitFloat32_fbound(a)]] =\n        Mf32_0.\n  }\n  Else {\n    Have: Mf32_1 = Mf32_3.\n    If lt_f32(Mf32_3[shiftfield_F10___LimitFloat32_fin(a)],\n         neg_f32(Mf32_3[shiftfield_F10___LimitFloat32_fbound(a)]))\n    Then {\n      Have: Mf32_3 = Mf32_4.\n      Have: Mf32_4[a_3\n              <- neg_f32(Mf32_4[shiftfield_F10___LimitFloat32_fbound(a)])] =\n          Mf32_0.\n    }\n    Else {\n      Have: Mf32_3 = Mf32_5.\n      Have: Mf32_5[a_3 <- Mf32_5[shiftfield_F10___LimitFloat32_fin(a)]] =\n          Mf32_0.\n    }\n  }\n}\nProve: of_f32(Mf32_0[a_2 <- a_4][a_3]) = of_f32(a_4).\nProver Z3 4.8.12 returns Timeout (Qed:11ms) (3s)", 'Error found in file: Output/LimitFloat32.c at line: 13', 'Error line content: ensures *(pIp->ret) == pIp->fvalue;')
+
+Postcond Results:
+- False
+- False
+
+------------------------------------------------
+File Name: DevControl.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/DevControl.c (with preprocessing)
+[kernel:annot-error] Output/DevControl.c:6: Warning: 
+  \result meaningless. Ignoring logic specification of function DevControlFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: Tr32Uint08.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/Tr32Uint08.c (with preprocessing)
+[kernel:annot-error] Output/Tr32Uint08.c:5: Warning: 
+  unbound logic variable NULL. Ignoring logic specification of function Tr32Uint08Fun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: LimitCtrlAngleInput.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/LimitCtrlAngleInput.c (with preprocessing)
+[kernel:annot-error] Output/LimitCtrlAngleInput.c:11: Warning: 
+  pIp->max is not a pointer.. Ignoring logic specification of function LimitCtrlAngleInputFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModeRoll.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (4/22):\nEffect at line 34\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet a_3 = shiftfield_F5_TAG_DSS_DATA_royaw(a_2).\nLet a_4 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_5 = shift_S7_TAG_CONTROLLERIN(a_4, 0).\nLet a_6 = addr_of_int(32000).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_6, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_5, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Then *)\n  Have: Mint_0[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)] = 1.\n  If lt_f32(to_f32(.0), Mf32_0[a_3])\n  Then { Have: Mf32_0[a_3] = tmproyaw_0. }\n  Else { Have: neg_f32(Mf32_0[a_3]) = tmproyaw_0. }\n  (* Then *)\n  Have: lt_f32(to_f32(1.0), tmproyaw_0).\n  (* Then *)\n  Have: 17 <= to_uint64(1 + x).\n}\nProve: (shiftfield_F11___SAMSubModeRoll_countMode(a) = a_6) \\/ (a_1 = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_5) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 1)) =\n     a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 2)) =\n     a_6).\nProver Z3 4.8.12 returns Unknown (Qed:13ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (5/22):\nEffect at line 34\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet a_3 = shiftfield_F5_TAG_DSS_DATA_royaw(a_2).\nLet a_4 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_5 = shift_S7_TAG_CONTROLLERIN(a_4, 0).\nLet a_6 = addr_of_int(32340).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_6, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_5, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Then *)\n  Have: Mint_0[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)] = 1.\n  If lt_f32(to_f32(.0), Mf32_0[a_3])\n  Then { Have: Mf32_0[a_3] = tmproyaw_0. }\n  Else { Have: neg_f32(Mf32_0[a_3]) = tmproyaw_0. }\n  (* Then *)\n  Have: lt_f32(to_f32(1.0), tmproyaw_0).\n  (* Then *)\n  Have: 17 <= to_uint64(1 + x).\n}\nProve: (shiftfield_F11___SAMSubModeRoll_countMode(a) = a_6) \\/ (a_1 = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_5) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 1)) =\n     a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 2)) =\n     a_6).\nProver Z3 4.8.12 returns Unknown (Qed:14ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (6/22):\nEffect at line 34\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet a_3 = shiftfield_F5_TAG_DSS_DATA_royaw(a_2).\nLet a_4 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_5 = shift_S7_TAG_CONTROLLERIN(a_4, 0).\nLet a_6 = addr_of_int(32680).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_6, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_5, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Then *)\n  Have: Mint_0[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)] = 1.\n  If lt_f32(to_f32(.0), Mf32_0[a_3])\n  Then { Have: Mf32_0[a_3] = tmproyaw_0. }\n  Else { Have: neg_f32(Mf32_0[a_3]) = tmproyaw_0. }\n  (* Then *)\n  Have: lt_f32(to_f32(1.0), tmproyaw_0).\n  (* Then *)\n  Have: 17 <= to_uint64(1 + x).\n}\nProve: (shiftfield_F11___SAMSubModeRoll_countMode(a) = a_6) \\/ (a_1 = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_5) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 1)) =\n     a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 2)) =\n     a_6).\nProver Z3 4.8.12 returns Unknown (Qed:16ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (7/22):\nEffect at line 35\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet a_3 = shiftfield_F5_TAG_DSS_DATA_royaw(a_2).\nLet a_4 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_5 = shift_S7_TAG_CONTROLLERIN(a_4, 0).\nLet a_6 = addr_of_int(32024).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_6, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_5, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Then *)\n  Have: Mint_0[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)] = 1.\n  If lt_f32(to_f32(.0), Mf32_0[a_3])\n  Then { Have: Mf32_0[a_3] = tmproyaw_0. }\n  Else { Have: neg_f32(Mf32_0[a_3]) = tmproyaw_0. }\n  (* Then *)\n  Have: lt_f32(to_f32(1.0), tmproyaw_0).\n  (* Then *)\n  Have: 17 <= to_uint64(1 + x).\n}\nProve: (shiftfield_F11___SAMSubModeRoll_countMode(a) = a_6) \\/ (a_1 = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_5) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 1)) =\n     a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 2)) =\n     a_6).\nProver Z3 4.8.12 returns Unknown (Qed:17ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (8/22):\nEffect at line 35\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet a_3 = shiftfield_F5_TAG_DSS_DATA_royaw(a_2).\nLet a_4 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_5 = shift_S7_TAG_CONTROLLERIN(a_4, 0).\nLet a_6 = addr_of_int(32364).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_6, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_5, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Then *)\n  Have: Mint_0[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)] = 1.\n  If lt_f32(to_f32(.0), Mf32_0[a_3])\n  Then { Have: Mf32_0[a_3] = tmproyaw_0. }\n  Else { Have: neg_f32(Mf32_0[a_3]) = tmproyaw_0. }\n  (* Then *)\n  Have: lt_f32(to_f32(1.0), tmproyaw_0).\n  (* Then *)\n  Have: 17 <= to_uint64(1 + x).\n}\nProve: (shiftfield_F11___SAMSubModeRoll_countMode(a) = a_6) \\/ (a_1 = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_5) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 1)) =\n     a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 2)) =\n     a_6).\nProver Z3 4.8.12 returns Unknown (Qed:18ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (9/22):\nEffect at line 35\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet a_3 = shiftfield_F5_TAG_DSS_DATA_royaw(a_2).\nLet a_4 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_5 = shift_S7_TAG_CONTROLLERIN(a_4, 0).\nLet a_6 = addr_of_int(32704).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_6, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_5, 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 1).\n  (* Then *)\n  Have: Mint_0[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)] = 1.\n  If lt_f32(to_f32(.0), Mf32_0[a_3])\n  Then { Have: Mf32_0[a_3] = tmproyaw_0. }\n  Else { Have: neg_f32(Mf32_0[a_3]) = tmproyaw_0. }\n  (* Then *)\n  Have: lt_f32(to_f32(1.0), tmproyaw_0).\n  (* Then *)\n  Have: 17 <= to_uint64(1 + x).\n}\nProve: (shiftfield_F11___SAMSubModeRoll_countMode(a) = a_6) \\/ (a_1 = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_6) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_6) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_5) = a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 1)) =\n     a_6) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4, 2)) =\n     a_6).\nProver Z3 4.8.12 returns Unknown (Qed:18ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (13/22):\nEffect at line 55\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_2[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)].\nLet a_3 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_4 = shift_S7_TAG_CONTROLLERIN(a_3, 0).\nLet a_5 = addr_of_int(32000).\nLet a_6 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x) /\\ is_uint64(Mint_1[a_6]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_5, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_2), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_2 = Mint_3.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_3 = Mint_1).\n      If 17 <= to_uint64(1 + Mint_1[a_6])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_1 <- 0]\n                [a_6 <- 0] = Mint_0.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])] = Mint_0).\n      }\n    }\n    Else { Have: Mint_3 = Mint_0. }\n  }\n  Else { Have: Mint_2 = Mint_4. Have: Mint_4[a_6 <- 0] = Mint_0. }\n  (* Then *)\n  Have: 6251 <= x.\n}\nProve: (a_1 = a_5) \\/ (a_6 = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_4) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 1)) =\n     a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 2)) =\n     a_5).\nProver Z3 4.8.12 returns Unknown (Qed:76ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (14/22):\nEffect at line 55\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_2[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)].\nLet a_3 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_4 = shift_S7_TAG_CONTROLLERIN(a_3, 0).\nLet a_5 = addr_of_int(32340).\nLet a_6 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x) /\\ is_uint64(Mint_1[a_6]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_5, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_2), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_2 = Mint_3.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_3 = Mint_1).\n      If 17 <= to_uint64(1 + Mint_1[a_6])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_1 <- 0]\n                [a_6 <- 0] = Mint_0.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])] = Mint_0).\n      }\n    }\n    Else { Have: Mint_3 = Mint_0. }\n  }\n  Else { Have: Mint_2 = Mint_4. Have: Mint_4[a_6 <- 0] = Mint_0. }\n  (* Then *)\n  Have: 6251 <= x.\n}\nProve: (a_1 = a_5) \\/ (a_6 = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_4) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 1)) =\n     a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 2)) =\n     a_5).\nProver Z3 4.8.12 returns Unknown (Qed:104ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (15/22):\nEffect at line 55\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_2[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)].\nLet a_3 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_4 = shift_S7_TAG_CONTROLLERIN(a_3, 0).\nLet a_5 = addr_of_int(32680).\nLet a_6 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x) /\\ is_uint64(Mint_1[a_6]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_5, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_2), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_2 = Mint_3.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_3 = Mint_1).\n      If 17 <= to_uint64(1 + Mint_1[a_6])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_1 <- 0]\n                [a_6 <- 0] = Mint_0.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])] = Mint_0).\n      }\n    }\n    Else { Have: Mint_3 = Mint_0. }\n  }\n  Else { Have: Mint_2 = Mint_4. Have: Mint_4[a_6 <- 0] = Mint_0. }\n  (* Then *)\n  Have: 6251 <= x.\n}\nProve: (a_1 = a_5) \\/ (a_6 = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_4) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 1)) =\n     a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 2)) =\n     a_5).\nProver Z3 4.8.12 returns Unknown (Qed:93ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (16/22):\nEffect at line 56\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_2[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)].\nLet a_3 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_4 = shift_S7_TAG_CONTROLLERIN(a_3, 0).\nLet a_5 = addr_of_int(32024).\nLet a_6 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x) /\\ is_uint64(Mint_1[a_6]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_5, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_2), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_2 = Mint_3.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_3 = Mint_1).\n      If 17 <= to_uint64(1 + Mint_1[a_6])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_1 <- 0]\n                [a_6 <- 0] = Mint_0.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])] = Mint_0).\n      }\n    }\n    Else { Have: Mint_3 = Mint_0. }\n  }\n  Else { Have: Mint_2 = Mint_4. Have: Mint_4[a_6 <- 0] = Mint_0. }\n  (* Then *)\n  Have: 6251 <= x.\n}\nProve: (a_1 = a_5) \\/ (a_6 = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_4) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 1)) =\n     a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 2)) =\n     a_5).\nProver Z3 4.8.12 returns Unknown (Qed:102ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (17/22):\nEffect at line 56\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_2[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)].\nLet a_3 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_4 = shift_S7_TAG_CONTROLLERIN(a_3, 0).\nLet a_5 = addr_of_int(32364).\nLet a_6 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x) /\\ is_uint64(Mint_1[a_6]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_5, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_2), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_2 = Mint_3.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_3 = Mint_1).\n      If 17 <= to_uint64(1 + Mint_1[a_6])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_1 <- 0]\n                [a_6 <- 0] = Mint_0.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])] = Mint_0).\n      }\n    }\n    Else { Have: Mint_3 = Mint_0. }\n  }\n  Else { Have: Mint_2 = Mint_4. Have: Mint_4[a_6 <- 0] = Mint_0. }\n  (* Then *)\n  Have: 6251 <= x.\n}\nProve: (a_1 = a_5) \\/ (a_6 = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_4) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 1)) =\n     a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 2)) =\n     a_5).\nProver Z3 4.8.12 returns Unknown (Qed:97ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (18/22):\nEffect at line 56\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_2[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)].\nLet a_3 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_4 = shift_S7_TAG_CONTROLLERIN(a_3, 0).\nLet a_5 = addr_of_int(32704).\nLet a_6 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x) /\\ is_uint64(Mint_1[a_6]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_5, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_2), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_2 = Mint_3.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_3 = Mint_1).\n      If 17 <= to_uint64(1 + Mint_1[a_6])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_1 <- 0]\n                [a_6 <- 0] = Mint_0.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])] = Mint_0).\n      }\n    }\n    Else { Have: Mint_3 = Mint_0. }\n  }\n  Else { Have: Mint_2 = Mint_4. Have: Mint_4[a_6 <- 0] = Mint_0. }\n  (* Then *)\n  Have: 6251 <= x.\n}\nProve: (a_1 = a_5) \\/ (a_6 = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_4) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 1)) =\n     a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 2)) =\n     a_5).\nProver Z3 4.8.12 returns Unknown (Qed:98ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (19/22):\nEffect at line 57\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_2[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)].\nLet a_3 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_4 = shift_S7_TAG_CONTROLLERIN(a_3, 0).\nLet a_5 = addr_of_int(32028).\nLet a_6 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x) /\\ is_uint64(Mint_1[a_6]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_5, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_2), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_2 = Mint_3.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_3 = Mint_1).\n      If 17 <= to_uint64(1 + Mint_1[a_6])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_1 <- 0]\n                [a_6 <- 0] = Mint_0.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])] = Mint_0).\n      }\n    }\n    Else { Have: Mint_3 = Mint_0. }\n  }\n  Else { Have: Mint_2 = Mint_4. Have: Mint_4[a_6 <- 0] = Mint_0. }\n  (* Then *)\n  Have: 6251 <= x.\n}\nProve: (a_1 = a_5) \\/ (a_6 = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_4) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 1)) =\n     a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 2)) =\n     a_5).\nProver Z3 4.8.12 returns Unknown (Qed:98ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (20/22):\nEffect at line 57\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_2[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)].\nLet a_3 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_4 = shift_S7_TAG_CONTROLLERIN(a_3, 0).\nLet a_5 = addr_of_int(32368).\nLet a_6 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x) /\\ is_uint64(Mint_1[a_6]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_5, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_2), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_2 = Mint_3.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_3 = Mint_1).\n      If 17 <= to_uint64(1 + Mint_1[a_6])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_1 <- 0]\n                [a_6 <- 0] = Mint_0.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])] = Mint_0).\n      }\n    }\n    Else { Have: Mint_3 = Mint_0. }\n  }\n  Else { Have: Mint_2 = Mint_4. Have: Mint_4[a_6 <- 0] = Mint_0. }\n  (* Then *)\n  Have: 6251 <= x.\n}\nProve: (a_1 = a_5) \\/ (a_6 = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_4) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 1)) =\n     a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 2)) =\n     a_5).\nProver Z3 4.8.12 returns Unknown (Qed:94ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (21/22):\nEffect at line 57\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x = Mint_0[a_1].\nLet a_2 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_2[shiftfield_F5_TAG_DSS_DATA_flgSP(a_2)].\nLet a_3 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\nLet a_4 = shift_S7_TAG_CONTROLLERIN(a_3, 0).\nLet a_5 = addr_of_int(32708).\nLet a_6 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet a_7 = shiftfield_F11___SAMSubModeRoll_mFWarning(a).\nAssume {\n  Type: is_uint64(x) /\\ is_uint64(Mint_1[a_6]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: !invalid(Malloc_0, a_5, 1).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_4, 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_2), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_2 = Mint_3.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_2)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_3 = Mint_1).\n      If 17 <= to_uint64(1 + Mint_1[a_6])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_1 <- 0]\n                [a_6 <- 0] = Mint_0.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_1[a_6 <- to_uint64(1 + Mint_1[a_6])] = Mint_0).\n      }\n    }\n    Else { Have: Mint_3 = Mint_0. }\n  }\n  Else { Have: Mint_2 = Mint_4. Have: Mint_4[a_6 <- 0] = Mint_0. }\n  (* Then *)\n  Have: 6251 <= x.\n}\nProve: (a_1 = a_5) \\/ (a_6 = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgMode(a) = a_5) \\/\n    (shiftfield_F11___SAMSubModeRoll_flgPRSAM(a) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(a_7) = a_5) \\/\n    (shiftfield_F4_TAG_FAULT_WARNING_flgups(a_7) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(a_4) = a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 1)) =\n     a_5) \\/\n    (shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_3, 2)) =\n     a_5).\nProver Z3 4.8.12 returns Unknown (Qed:119ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+- ("Goal Assigns (file Output/SAMSubModeRoll.c, line 10) in 'SAMSubModeRollFun' (22/22):\nEffect at line 65\nLet a = global(G_pIp_36).\nLet x = Mint_0[shiftfield_F11___SAMSubModeRoll_countMode(a)].\nLet a_1 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_2[shiftfield_F5_TAG_DSS_DATA_flgSP(a_1)].\nAssume {\n  Type: is_uint64(x) /\\\n      is_uint64(Mint_1[shiftfield_F11___SAMSubModeRoll_countPublic(a)]) /\\\n      is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_S7_TAG_CONTROLLERIN(Mptr_0\n                                      [shiftfield_F11___SAMSubModeRoll_pCtrl(a)],\n            0), 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_1), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_2 = Mint_3.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_3 = Mint_1).\n      If 17\n           <= to_uint64(1\n                + Mint_1[shiftfield_F11___SAMSubModeRoll_countPublic(a)])\n      Then {\n        Let a_2 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_1[a_2 <- to_uint64(1 + Mint_1[a_2])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51]\n                [shiftfield_F11___SAMSubModeRoll_countMode(a) <- 0][a_2 <- 0] =\n            Mint_0.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_1[a_2 <- to_uint64(1 + Mint_1[a_2])] = Mint_0).\n      }\n    }\n    Else { Have: Mint_3 = Mint_0. }\n  }\n  Else { Have: Mint_2 = Mint_4. Have: Mint_4[a_2 <- 0] = Mint_0. }\n  (* Then *)\n  Have: 6251 <= x.\n  (* Then *)\n  Have: Mint_5[shiftfield_F11___SAMSubModeRoll_flgPRSAM(a)] = 13107.\n}\nProve: false.\nProver Z3 4.8.12 returns Unknown (Qed:158ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 10', 'Error line content: assigns pIp->countPublic, pIp->flgMode, pIp->countMode, pIp->pCtrl[0].Up, pIp->pCtrl[1].Up, pIp->pCtrl[2].Up, pIp->flgPRSAM, pIp->mFWarning.flgups, pIp->mFWarning.countUPSpc;')
+
+Assertion Results:
+- True
+- True
+- True
+- False
+- False
+- False
+- False
+- False
+- False
+- True
+- True
+- True
+- False
+- False
+- False
+- False
+- False
+- False
+- False
+- False
+- False
+- False
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/SAMSubModeRoll.c, line 13) in 'SAMSubModeRollFun':\nLet a = global(G_pIp_36).\nLet a_1 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x = Mint_2[a_1].\nLet a_2 = shiftfield_F11___SAMSubModeRoll_pSDS(a).\nLet a_3 = Mptr_0[a_2].\nLet x_1 = Mint_4[shiftfield_F5_TAG_DSS_DATA_flgSP(a_3)].\nLet a_4 = Mptr_1[a_2].\nLet r = of_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_4)]).\nLet a_5 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet x_2 = Mint_0[a_5].\nAssume {\n  Type: is_uint32(Mint_1[shiftfield_F11___SAMSubModeRoll_flgPRSAM(a)]) /\\\n      is_uint64(Mint_0[a_1]) /\\ is_uint64(x_2) /\\\n      is_uint64(Mint_0[shiftfield_F11___SAMSubModeRoll_flgMode(a)]) /\\\n      is_uint64(x) /\\ is_uint64(Mint_3[a_5]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: (Mint_0[shiftfield_F5_TAG_DSS_DATA_flgSP(a_4)] = 1) /\\\n      (if (.0 < r) then (1.0 < r) else (r < -1.0)).\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_S7_TAG_CONTROLLERIN(Mptr_0\n                                      [shiftfield_F11___SAMSubModeRoll_pCtrl(a)],\n            0), 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_3), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_4 = Mint_5.\n    If lt_f32(to_f32(.0), Mf32_1[shiftfield_F5_TAG_DSS_DATA_royaw(a_3)])\n    Then { Have: Mf32_1[shiftfield_F5_TAG_DSS_DATA_royaw(a_3)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_1[shiftfield_F5_TAG_DSS_DATA_royaw(a_3)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_1 = Mf32_2) /\\ (Mint_5 = Mint_3).\n      If 17 <= to_uint64(1 + Mint_3[a_5])\n      Then {\n        Have: Mf32_2 = Mf32_3.\n        Have: Mf32_3[addr_of_int(32024) <- v][addr_of_int(32364) <- v_1]\n                [addr_of_int(32704) <- v_2] = Mf32_4.\n        Have: Mint_3[a_5 <- to_uint64(1 + Mint_3[a_5])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_1 <- 0]\n                [a_5 <- 0] = Mint_2.\n      }\n      Else {\n        Let a_6 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\n        Let a_7 = to_f32(.0).\n        Have: (Mf32_2 = Mf32_5) /\\\n            (Mint_3[a_5 <- to_uint64(1 + Mint_3[a_5])] = Mint_2).\n        Have: Mf32_5\n                [shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_6,\n                                                     0)) <- a_7]\n                [shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_6,\n                                                     1)) <- a_7]\n                [shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_6,\n                                                     2)) <- a_7] = Mf32_4.\n      }\n    }\n    Else { Have: (Mf32_1 = Mf32_4) /\\ (Mint_5 = Mint_2). }\n  }\n  Else { Have: Mint_4 = Mint_6. Have: Mint_6[a_5 <- 0] = Mint_2. }\n  If 6251 <= x\n  Then {\n    Have: (Malloc_0 = Malloc_1) /\\ (Mf32_4 = Mf32_6) /\\ (Mint_2 = Mint_7).\n    If Mint_1[shiftfield_F11___SAMSubModeRoll_flgPRSAM(a)] = 13107\n    Then { Have: Malloc_1 = Malloc_2. }\n    Else {\n      Have: (Mptr_1 = Mptr_0) /\\\n          (Mint_7[shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 17][a_1 <- 0]\n             [a_5 <- 0] = Mint_0) /\\\n          (Mf32_6[addr_of_int(32024) <- v_3][addr_of_int(32364) <- v_4]\n             [addr_of_int(32704) <- v_5][addr_of_int(32028) <- v_6]\n             [addr_of_int(32368) <- v_7][addr_of_int(32708) <- v_8] = Mf32_0).\n    }\n  }\n  Else { Have: (Mf32_4 = Mf32_0) /\\ (Mint_2 = Mint_0) /\\ (Mptr_1 = Mptr_0). }\n}\nProve: x_2 <= 16.\nProver Z3 4.8.12 returns Timeout (Qed:225ms) (3s)", 'Error found in file: Output/SAMSubModeRoll.c at line: 13', 'Error line content: ensures (pIp->pSDS->flgSP == 0x1 && ABS(pIp->pSDS->royaw) > 1.0f) ==> (pIp->countPublic <= 16);')
+- ("Goal Post-condition (file Output/SAMSubModeRoll.c, line 14) in 'SAMSubModeRollFun':\nLet a = global(G_pIp_36).\nLet x = Mint_1[shiftfield_F11___SAMSubModeRoll_flgPRSAM(a)].\nLet a_1 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_4[shiftfield_F5_TAG_DSS_DATA_flgSP(a_1)].\nLet a_2 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x_2 = Mint_0[a_2].\nLet x_3 = Mint_2[a_2].\nLet a_3 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet x_4 = Mint_0[shiftfield_F11___SAMSubModeRoll_flgMode(a)].\nAssume {\n  Type: is_uint32(x) /\\ is_uint64(x_2) /\\ is_uint64(Mint_0[a_3]) /\\\n      is_uint64(x_4) /\\ is_uint64(x_3) /\\ is_uint64(Mint_3[a_3]) /\\\n      is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Residual *)\n  When: 6251 <= x_3.\n  (* Goal *)\n  When: 6251 <= x_2.\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_S7_TAG_CONTROLLERIN(Mptr_0\n                                      [shiftfield_F11___SAMSubModeRoll_pCtrl(a)],\n            0), 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_1), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_4 = Mint_5.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_5 = Mint_3).\n      If 17 <= to_uint64(1 + Mint_3[a_3])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_3[a_3 <- to_uint64(1 + Mint_3[a_3])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_2 <- 0]\n                [a_3 <- 0] = Mint_2.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_3[a_3 <- to_uint64(1 + Mint_3[a_3])] = Mint_2).\n      }\n    }\n    Else { Have: Mint_5 = Mint_2. }\n  }\n  Else { Have: Mint_4 = Mint_6. Have: Mint_6[a_3 <- 0] = Mint_2. }\n  If x = 13107\n  Else {\n    Have: Mint_2[shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 17][a_2 <- 0]\n            [a_3 <- 0] = Mint_0.\n  }\n}\nProve: x_4 = 17.\nProver Z3 4.8.12 returns Unknown (Qed:187ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 14', 'Error line content: ensures (pIp->countMode > 6250) ==> (pIp->flgMode == SAM_PITCH);')
+- ("Goal Post-condition (file Output/SAMSubModeRoll.c, line 15) in 'SAMSubModeRollFun':\nLet a = global(G_pIp_36).\nLet x = Mint_1[shiftfield_F11___SAMSubModeRoll_flgPRSAM(a)].\nLet a_1 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_4[shiftfield_F5_TAG_DSS_DATA_flgSP(a_1)].\nLet a_2 = shiftfield_F11___SAMSubModeRoll_countMode(a).\nLet x_2 = Mint_0[a_2].\nLet x_3 = Mint_2[a_2].\nLet a_3 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\nLet x_4 = Mint_0[a_3].\nAssume {\n  Type: is_uint32(x) /\\ is_uint64(x_2) /\\ is_uint64(x_4) /\\\n      is_uint64(Mint_0[shiftfield_F11___SAMSubModeRoll_flgMode(a)]) /\\\n      is_uint64(x_3) /\\ is_uint64(Mint_3[a_3]) /\\ is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Residual *)\n  When: 6251 <= x_3.\n  (* Goal *)\n  When: 6251 <= x_2.\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_S7_TAG_CONTROLLERIN(Mptr_0\n                                      [shiftfield_F11___SAMSubModeRoll_pCtrl(a)],\n            0), 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_1), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_4 = Mint_5.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_5 = Mint_3).\n      If 17 <= to_uint64(1 + Mint_3[a_3])\n      Then {\n        Have: Mf32_1 = Mf32_2.\n        Have: Mint_3[a_3 <- to_uint64(1 + Mint_3[a_3])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51][a_2 <- 0]\n                [a_3 <- 0] = Mint_2.\n      }\n      Else {\n        Have: (Mf32_1 = Mf32_3) /\\\n            (Mint_3[a_3 <- to_uint64(1 + Mint_3[a_3])] = Mint_2).\n      }\n    }\n    Else { Have: Mint_5 = Mint_2. }\n  }\n  Else { Have: Mint_4 = Mint_6. Have: Mint_6[a_3 <- 0] = Mint_2. }\n  If x = 13107\n  Else {\n    Have: Mint_2[shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 17][a_2 <- 0]\n            [a_3 <- 0] = Mint_0.\n  }\n}\nProve: x_4 = 0.\nProver Z3 4.8.12 returns Unknown (Qed:180ms)", 'Error found in file: Output/SAMSubModeRoll.c at line: 15', 'Error line content: ensures (pIp->countMode > 6250) ==> (pIp->countPublic == 0);')
+- ("Goal Post-condition (file Output/SAMSubModeRoll.c, line 16) in 'SAMSubModeRollFun':\nLet a = global(G_pIp_36).\nLet x = Mint_1[shiftfield_F11___SAMSubModeRoll_countMode(a)].\nLet a_1 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_3[shiftfield_F5_TAG_DSS_DATA_flgSP(a_1)].\nLet a_2 = shiftfield_F11___SAMSubModeRoll_flgPRSAM(a).\nAssume {\n  Type: is_uint32(Mint_0[a_2]) /\\ is_uint64(x) /\\\n      is_uint64(Mint_2[shiftfield_F11___SAMSubModeRoll_countPublic(a)]) /\\\n      is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: Mint_4[a_2] = 13107.\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_S7_TAG_CONTROLLERIN(Mptr_0\n                                      [shiftfield_F11___SAMSubModeRoll_pCtrl(a)],\n            0), 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_1), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_3 = Mint_5.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_5 = Mint_2).\n      If 17\n           <= to_uint64(1\n                + Mint_2[shiftfield_F11___SAMSubModeRoll_countPublic(a)])\n      Then {\n        Let a_3 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\n        Have: Mf32_1 = Mf32_2.\n        Have: Mf32_2[addr_of_int(32024) <- v][addr_of_int(32364) <- v_1]\n                [addr_of_int(32704) <- v_2] = Mf32_3.\n        Have: Mint_2[a_3 <- to_uint64(1 + Mint_2[a_3])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51]\n                [shiftfield_F11___SAMSubModeRoll_countMode(a) <- 0][a_3 <- 0] =\n            Mint_1.\n      }\n      Else {\n        Let a_4 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\n        Let a_5 = to_f32(.0).\n        Have: (Mf32_1 = Mf32_4) /\\\n            (Mint_2[a_3 <- to_uint64(1 + Mint_2[a_3])] = Mint_1).\n        Have: Mf32_4\n                [shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4,\n                                                     0)) <- a_5]\n                [shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4,\n                                                     1)) <- a_5]\n                [shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4,\n                                                     2)) <- a_5] = Mf32_3.\n      }\n    }\n    Else { Have: (Mf32_0 = Mf32_3) /\\ (Mint_5 = Mint_1). }\n  }\n  Else { Have: Mint_3 = Mint_6. Have: Mint_6[a_3 <- 0] = Mint_1. }\n  If 6251 <= x\n  Then {\n    Have: (Malloc_0 = Malloc_1) /\\ (Mf32_3 = Mf32_5).\n    If Mint_0[a_2] = 13107\n    Then { Have: Malloc_1 = Malloc_2. Have: Mint_7[a_2 <- 52428] = Mint_4. }\n    Else {\n      Have: Mint_0 = Mint_8.\n      Have: Mint_8[a_2 <- 13107]\n              [shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(shiftfield_F11___SAMSubModeRoll_mFWarning(a))\n              <- 0] = Mint_4.\n    }\n  }\n}\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:221ms) (3s)", 'Error found in file: Output/SAMSubModeRoll.c at line: 16', 'Error line content: ensures (pIp->flgPRSAM == 0x3333) ==> (pIp->flgPRSAM == 0xCCCC);')
+- ("Goal Post-condition (file Output/SAMSubModeRoll.c, line 17) in 'SAMSubModeRollFun':\nLet a = global(G_pIp_36).\nLet x = Mint_1[shiftfield_F11___SAMSubModeRoll_countMode(a)].\nLet a_1 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pSDS(a)].\nLet x_1 = Mint_3[shiftfield_F5_TAG_DSS_DATA_flgSP(a_1)].\nLet a_2 = shiftfield_F11___SAMSubModeRoll_flgPRSAM(a).\nAssume {\n  Type: is_uint32(Mint_0[a_2]) /\\ is_uint64(x) /\\\n      is_uint64(Mint_2[shiftfield_F11___SAMSubModeRoll_countPublic(a)]) /\\\n      is_uint64(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Goal *)\n  When: Mint_4[a_2] = 52428.\n  (* Pre-condition *)\n  Have: G_pIp_36 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_S7_TAG_CONTROLLERIN(Mptr_0\n                                      [shiftfield_F11___SAMSubModeRoll_pCtrl(a)],\n            0), 9).\n  (* Pre-condition *)\n  Have: ((x_1 = 1) ->\n      valid_rw(Malloc_0, shiftfield_F5_TAG_DSS_DATA_royaw(a_1), 1)).\n  If x_1 = 1\n  Then {\n    Have: Mint_3 = Mint_5.\n    If lt_f32(to_f32(.0), Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)])\n    Then { Have: Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)] = tmproyaw_0.\n    }\n    Else {\n      Have: neg_f32(Mf32_0[shiftfield_F5_TAG_DSS_DATA_royaw(a_1)]) =\n          tmproyaw_0.\n    }\n    If lt_f32(to_f32(1.0), tmproyaw_0)\n    Then {\n      Have: (Mf32_0 = Mf32_1) /\\ (Mint_5 = Mint_2).\n      If 17\n           <= to_uint64(1\n                + Mint_2[shiftfield_F11___SAMSubModeRoll_countPublic(a)])\n      Then {\n        Let a_3 = shiftfield_F11___SAMSubModeRoll_countPublic(a).\n        Have: Mf32_1 = Mf32_2.\n        Have: Mf32_2[addr_of_int(32024) <- v][addr_of_int(32364) <- v_1]\n                [addr_of_int(32704) <- v_2] = Mf32_3.\n        Have: Mint_2[a_3 <- to_uint64(1 + Mint_2[a_3])]\n                [shiftfield_F11___SAMSubModeRoll_flgMode(a) <- 51]\n                [shiftfield_F11___SAMSubModeRoll_countMode(a) <- 0][a_3 <- 0] =\n            Mint_1.\n      }\n      Else {\n        Let a_4 = Mptr_0[shiftfield_F11___SAMSubModeRoll_pCtrl(a)].\n        Let a_5 = to_f32(.0).\n        Have: (Mf32_1 = Mf32_4) /\\\n            (Mint_2[a_3 <- to_uint64(1 + Mint_2[a_3])] = Mint_1).\n        Have: Mf32_4\n                [shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4,\n                                                     0)) <- a_5]\n                [shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4,\n                                                     1)) <- a_5]\n                [shiftfield_F7_TAG_CONTROLLERIN_Up(shift_S7_TAG_CONTROLLERIN(a_4,\n                                                     2)) <- a_5] = Mf32_3.\n      }\n    }\n    Else { Have: (Mf32_0 = Mf32_3) /\\ (Mint_5 = Mint_1). }\n  }\n  Else { Have: Mint_3 = Mint_6. Have: Mint_6[a_3 <- 0] = Mint_1. }\n  If 6251 <= x\n  Then {\n    Have: (Malloc_0 = Malloc_1) /\\ (Mf32_3 = Mf32_5).\n    If Mint_0[a_2] = 13107\n    Then { Have: Malloc_1 = Malloc_2. Have: Mint_7[a_2 <- 52428] = Mint_4. }\n    Else {\n      Have: Mint_0 = Mint_8.\n      Have: Mint_8[a_2 <- 13107]\n              [shiftfield_F4_TAG_FAULT_WARNING_countUPSpc(shiftfield_F11___SAMSubModeRoll_mFWarning(a))\n              <- 0] = Mint_4.\n    }\n  }\n}\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:199ms) (3s)", 'Error found in file: Output/SAMSubModeRoll.c at line: 17', 'Error line content: ensures (pIp->flgPRSAM == 0xCCCC) ==> (pIp->flgPRSAM == 0x3333);')
+
+Postcond Results:
+- True
+- True
+- False
+- False
+- False
+- False
+- False
+
+------------------------------------------------
+File Name: CalculateGyroDg.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/CalculateGyroDg.c (with preprocessing)
+[kernel:annot-error] Output/CalculateGyroDg.c:12: Warning: unexpected token '('
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: DSSDataGet.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/DSSDataGet.c (with preprocessing)
+[kernel:annot-error] Output/DSSDataGet.c:67: Warning: unexpected token 'or'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: common.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: ModeControl.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ModeControl.c (with preprocessing)
+[kernel:annot-error] Output/ModeControl.c:13: Warning: 
+  \result meaningless. Ignoring logic specification of function ModeControlFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: ModPNHP.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ('Goal Assertion (file Output/ModPNHP.c, line 19):\nLet a = global(G_pIp_31).\nLet a_1 = Mf32_0[shiftfield_F10___ModPNHP_halfperiod(a)].\nLet a_2 = Mptr_0[shiftfield_F10___ModPNHP_ret(a)].\nAssume {\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_2, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a_2, 0), 1).\n  (* Pre-condition *)\n  Have: .0 < of_f32(a_1).\n}\nProve: .0 < of_f32(mul_f32(to_f32(2.0), a_1)).\nProver Z3 4.8.12 returns Timeout (Qed:0.97ms) (2.6s)', 'Error found in file: Output/ModPNHP.c at line: 19', 'Error line content: /*@ assert period > 0; */')
+
+Assertion Results:
+- True
+- False
+- True
+- True
+- True
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: SAMSubModeDamp.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SAMSubModeDamp.c (with preprocessing)
+[kernel:annot-error] Output/SAMSubModeDamp.c:14: Warning: 
+  \result meaningless. Ignoring logic specification of function SAMSubModeDampFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: LimitCtrlRateInput.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/LimitCtrlRateInput.c (with preprocessing)
+[kernel:annot-error] Output/LimitCtrlRateInput.c:11: Warning: 
+  unexpected token 'LimitFloat32'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: PseudoRateModulator.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/PseudoRateModulator.c, line 10) in 'PseudoRateModulatorFun':\nLet a = global(G_pIp_31).\nLet a_1 = shiftfield_F10___PseudoRateModulator_h1(a).\nLet a_2 = Mf32_1[a_1].\nLet a_3 = Mptr_0[shiftfield_F10___PseudoRateModulator_pModulator(a)].\nLet a_4 = shiftfield_F2_TAG_FALSE_RATE_MODULATOR_u(a_3).\nLet a_5 = Mf32_1[a_4].\nLet a_6 = shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(a_3).\nLet a_7 = Mf32_1[a_6].\nLet r = of_f32(a_5).\nLet r_1 = of_f32(a_2).\nLet r_2 = of_f32(a_7).\nLet x = Mint_0[shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yp(a_3)].\nLet r_3 = of_f32(Mf32_0[a_1]).\nLet r_4 = of_f32(Mf32_0[a_6]).\nLet r_5 = of_f32(Mf32_0[a_4]).\nAssume {\n  Type: is_uint8(Mint_0[shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yn(a_3)]) /\\\n      is_uint8(x).\n  (* Heap *)\n  Type: framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: a_3 != null.\n  (* Pre-condition *)\n  Have: (r <= (r_1 + r_2)) /\\ (r_2 <= (r_1 + r)).\n  If lt_f32(a_2, sub_f32(a_5, a_7))\n  Then {\n    Have: Mf32_1 = Mf32_2.\n    Have: Mint_1[shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yp(a_3) <- 0]\n            [shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yn(a_3) <- 15] = Mint_0.\n    Have: Mf32_2[a_6\n            <- add_f32(mul_f32(to_f32((1935881.0/2097152)), Mf32_2[a_6]),\n                 to_f32((10318659.0/134217728)))] = Mf32_0.\n  }\n  Else {\n    Have: Mf32_1 = Mf32_3.\n    If lt_f32(sub_f32(Mf32_3[a_4], Mf32_3[a_6]), neg_f32(Mf32_3[a_1]))\n    Then {\n      Have: Mf32_3 = Mf32_4.\n      Have: Mint_2[shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yp(a_3) <- 15]\n              [shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yn(a_3) <- 0] = Mint_0.\n      Have: Mf32_4[a_6\n              <- sub_f32(mul_f32(to_f32((1935881.0/2097152)), Mf32_4[a_6]),\n                   to_f32((10318659.0/134217728)))] = Mf32_0.\n    }\n    Else {\n      Have: Mf32_3 = Mf32_5.\n      Have: Mint_3[shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yp(a_3) <- 0]\n              [shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yn(a_3) <- 0] = Mint_0.\n      Have: Mf32_5[a_6 <- mul_f32(to_f32((1935881.0/2097152)), Mf32_5[a_6])] =\n          Mf32_0.\n    }\n  }\n}\nProve: x\n         = (if ((r_3 + r_4) < r_5) then 0\n            else (if ((r_3 + r_5) < r_4) then 15 else 0)).\nProver Z3 4.8.12 returns Timeout (Qed:21ms) (2.5s)", 'Error found in file: Output/PseudoRateModulator.c at line: 10', 'Error line content: ensures pIp->pModulator->Yp == (pIp->pModulator->u - pIp->pModulator->r > pIp->h1 ? 0x0 :')
+- ("Goal Post-condition (file Output/PseudoRateModulator.c, line 12) in 'PseudoRateModulatorFun':\nLet a = global(G_pIp_31).\nLet a_1 = shiftfield_F10___PseudoRateModulator_h1(a).\nLet a_2 = Mf32_1[a_1].\nLet a_3 = Mptr_0[shiftfield_F10___PseudoRateModulator_pModulator(a)].\nLet a_4 = shiftfield_F2_TAG_FALSE_RATE_MODULATOR_u(a_3).\nLet a_5 = Mf32_1[a_4].\nLet a_6 = shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(a_3).\nLet a_7 = Mf32_1[a_6].\nLet r = of_f32(a_5).\nLet r_1 = of_f32(a_2).\nLet r_2 = of_f32(a_7).\nLet x = Mint_0[shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yn(a_3)].\nLet r_3 = of_f32(Mf32_0[a_1]).\nLet r_4 = of_f32(Mf32_0[a_4]).\nLet r_5 = of_f32(Mf32_0[a_6]).\nAssume {\n  Type: is_uint8(x) /\\\n      is_uint8(Mint_0[shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yp(a_3)]).\n  (* Heap *)\n  Type: framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: a_3 != null.\n  (* Pre-condition *)\n  Have: (r <= (r_1 + r_2)) /\\ (r_2 <= (r_1 + r)).\n  If lt_f32(a_2, sub_f32(a_5, a_7))\n  Then {\n    Have: Mf32_1 = Mf32_2.\n    Have: Mint_1[shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yp(a_3) <- 0]\n            [shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yn(a_3) <- 15] = Mint_0.\n    Have: Mf32_2[a_6\n            <- add_f32(mul_f32(to_f32((1935881.0/2097152)), Mf32_2[a_6]),\n                 to_f32((10318659.0/134217728)))] = Mf32_0.\n  }\n  Else {\n    Have: Mf32_1 = Mf32_3.\n    If lt_f32(sub_f32(Mf32_3[a_4], Mf32_3[a_6]), neg_f32(Mf32_3[a_1]))\n    Then {\n      Have: Mf32_3 = Mf32_4.\n      Have: Mint_2[shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yp(a_3) <- 15]\n              [shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yn(a_3) <- 0] = Mint_0.\n      Have: Mf32_4[a_6\n              <- sub_f32(mul_f32(to_f32((1935881.0/2097152)), Mf32_4[a_6]),\n                   to_f32((10318659.0/134217728)))] = Mf32_0.\n    }\n    Else {\n      Have: Mf32_3 = Mf32_5.\n      Have: Mint_3[shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yp(a_3) <- 0]\n              [shiftfield_F2_TAG_FALSE_RATE_MODULATOR_Yn(a_3) <- 0] = Mint_0.\n      Have: Mf32_5[a_6 <- mul_f32(to_f32((1935881.0/2097152)), Mf32_5[a_6])] =\n          Mf32_0.\n    }\n  }\n}\nProve: x\n         = (if ((r_3 + r_4) < r_5) then 0\n            else (if ((r_3 + r_5) < r_4) then 15 else 0)).\nProver Z3 4.8.12 returns Timeout (Qed:22ms) (2.6s)", 'Error found in file: Output/PseudoRateModulator.c at line: 12', 'Error line content: ensures pIp->pModulator->Yn == (pIp->pModulator->u - pIp->pModulator->r < -pIp->h1 ? 0x0 :')
+- ("Goal Post-condition (file Output/PseudoRateModulator.c, line 14) in 'PseudoRateModulatorFun':\nLet a = global(G_pIp_31).\nLet a_1 = shiftfield_F10___PseudoRateModulator_h1(a).\nLet a_2 = Mf32_1[a_1].\nLet a_3 = Mptr_0[shiftfield_F10___PseudoRateModulator_pModulator(a)].\nLet a_4 = shiftfield_F2_TAG_FALSE_RATE_MODULATOR_u(a_3).\nLet a_5 = Mf32_1[a_4].\nLet a_6 = shiftfield_F2_TAG_FALSE_RATE_MODULATOR_r(a_3).\nLet a_7 = Mf32_1[a_6].\nLet r = of_f32(a_5).\nLet r_1 = of_f32(a_2).\nLet r_2 = of_f32(a_7).\nLet r_3 = of_f32(Mf32_0[a_1]).\nLet r_4 = of_f32(Mf32_0[a_6]).\nLet r_5 = of_f32(Mf32_0[a_4]).\nLet r_6 = (1935881.0/2097152) * r_4.\nAssume {\n  (* Heap *)\n  Type: framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: a_3 != null.\n  (* Pre-condition *)\n  Have: (r <= (r_1 + r_2)) /\\ (r_2 <= (r_1 + r)).\n  If lt_f32(a_2, sub_f32(a_5, a_7))\n  Then {\n    Have: Mf32_1 = Mf32_2.\n    Have: Mf32_2[a_6\n            <- add_f32(mul_f32(to_f32((1935881.0/2097152)), Mf32_2[a_6]),\n                 to_f32((10318659.0/134217728)))] = Mf32_0.\n  }\n  Else {\n    Have: Mf32_1 = Mf32_3.\n    If lt_f32(sub_f32(Mf32_3[a_4], Mf32_3[a_6]), neg_f32(Mf32_3[a_1]))\n    Then {\n      Have: Mf32_3 = Mf32_4.\n      Have: Mf32_4[a_6\n              <- sub_f32(mul_f32(to_f32((1935881.0/2097152)), Mf32_4[a_6]),\n                   to_f32((10318659.0/134217728)))] = Mf32_0.\n    }\n    Else {\n      Have: Mf32_3 = Mf32_5.\n      Have: Mf32_5[a_6 <- mul_f32(to_f32((1935881.0/2097152)), Mf32_5[a_6])] =\n          Mf32_0.\n    }\n  }\n}\nProve: if ((r_3 + r_4) < r_5) then (((10318659.0/134217728) + r_6) = r_4)\n       else (if ((r_3 + r_5) < r_4)\n             then (r_6 = ((10318659.0/134217728) + r_4)) else (r_6 = r_4)).\nProver Z3 4.8.12 returns Timeout (Qed:22ms) (2.6s)", 'Error found in file: Output/PseudoRateModulator.c at line: 14', 'Error line content: ensures pIp->pModulator->r == (pIp->pModulator->u - pIp->pModulator->r > pIp->h1 ?')
+
+Postcond Results:
+- False
+- False
+- False
+
+------------------------------------------------
+File Name: DiviationToFloat.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/DiviationToFloat.c (with preprocessing)
+[kernel:annot-error] Output/DiviationToFloat.c:12: Warning: unexpected token ')'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: FaultJudgeProceed.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/FaultJudgeProceed.c (with preprocessing)
+[kernel:annot-error] Output/FaultJudgeProceed.c:16: Warning: 
+  unexpected token 'assigns'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: MatrixTran.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/MatrixTran.c, line 9) in 'MatrixTranFun' (2/2):\nEffect at line 20\nLet a = global(G_pIp_31).\nLet x = Mint_0[shiftfield_F10___MatrixTran_ncol(a)].\nLet x_1 = Mint_0[shiftfield_F10___MatrixTran_nrow(a)].\nLet x_2 = x * x_1.\nAssume {\n  Type: is_uint8(x) /\\ is_uint8(x_1).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_0).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: 0 < x_1.\n  (* Pre-condition *)\n  Have: 0 < x.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_float32(Mptr_0[shiftfield_F10___MatrixTran_mat(a)], 0), x_2).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0,\n          shift_float32(Mptr_0[shiftfield_F10___MatrixTran_tran(a)], 0), x_2).\n}\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/MatrixTran.c at line: 9', 'Error line content: assigns pIp->tran[0..(pIp->nrow * pIp->ncol - 1)];')
+
+Assertion Results:
+- True
+- False
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/MatrixTran.c, line 10) in 'MatrixTranFun':\nLet a = global(G_pIp_31).\nLet a_1 = shiftfield_F10___MatrixTran_nrow(a).\nLet x = Mint_0[a_1].\nLet a_2 = shiftfield_F10___MatrixTran_tran(a).\nLet a_3 = shiftfield_F10___MatrixTran_ncol(a).\nLet x_1 = Mint_1[a_3].\nLet x_2 = Mint_1[a_1].\nLet x_3 = x_1 * x_2.\nLet a_4 = shiftfield_F10___MatrixTran_mat(a).\nLet x_4 = Mint_0[a_3].\nAssume {\n  Type: is_uint8(i_2) /\\ is_uint8(x_1) /\\ is_uint8(x_2) /\\ is_uint8(x).\n  (* Heap *)\n  Type: linked(Malloc_0) /\\ framed(Mptr_1).\n  (* Goal *)\n  When: (0 <= i) /\\ (0 <= i_1) /\\ (i < x) /\\ (i_1 < x_4).\n  (* Pre-condition *)\n  Have: G_pIp_31 != 0.\n  (* Pre-condition *)\n  Have: 0 < x_2.\n  (* Pre-condition *)\n  Have: 0 < x_1.\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(Mptr_1[a_4], 0), x_3).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(Mptr_1[a_2], 0), x_3).\n  (* Else *)\n  Have: x <= i_2.\n}\nProve: of_f32(Mf32_0[shift_float32(Mptr_0[a_2], i + (i_1 * x))])\n         = of_f32(Mf32_0[shift_float32(Mptr_0[a_4], i_1 + (i * x_4))]).\nProver Z3 4.8.12 returns Timeout (Qed:2ms) (2.6s)", 'Error found in file: Output/MatrixTran.c at line: 10', 'Error line content: ensures \\forall integer i, j;')
+
+Postcond Results:
+- False
+
+------------------------------------------------
+File Name: CheckCal16.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/CheckCal16.c (with preprocessing)
+[kernel:annot-error] Output/CheckCal16.c:15: Warning: unexpected token '='
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: B_TcProcess.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/B_TcProcess.c (with preprocessing)
+[kernel:annot-error] Output/B_TcProcess.c:16: Warning: unexpected token ''
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
