@@ -12,7 +12,7 @@ class SpecGenerator:
         self.m = 1
         self.n = 0
         self.llm ='gpt-4o-mini'
-        self.prompt = 'pro'
+        self.prompt = 'base'
     
 
         self.client = None
@@ -49,7 +49,7 @@ class SpecGenerator:
         else:
             print(f"The folder {folder_path} does not exist.")
 
-    def copy_and_overwrite(self, input_dir='Input', output_dir='Output', extensions=['.c','h']):
+    def copy_and_overwrite(self, input_dir='Input', output_dir='Output', extensions=['.c']):
         # 确保输出目录存在
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
@@ -295,6 +295,10 @@ class SpecGenerator:
                             return llm_time  # 如果规约正确，直接返回
 
                     else:
+                        if self.prompt =='ultra':
+                            print('语法正确')
+                            return llm_time  # 如果规约正确，直接返回
+
                         # 如果语法正确但逻辑错误，调用 LLM 修复逻辑错误
                         error_list = verifier.loop_error_list + verifier.assert_error_list + verifier.post_error_list
                         acsl_spec = self.regen_spec(error_list, acsl_spec)
@@ -336,11 +340,9 @@ class SpecGenerator:
         total_verify_time = 0  # 总验证时间
         total_llm_time = 0
 
+
         for filename in os.listdir(input_dir):
-            if filename.endswith(".c"):
-
-                
-
+            if filename.endswith(".c"):              
                 count = count + 1
 
                 input_path = os.path.join(input_dir, filename)
@@ -348,7 +350,7 @@ class SpecGenerator:
 
                 generate_time_start = time.time()
 
-                llm_time = self.process_single_file(input_path, output_dir)
+                llm_time = self.process_single_file(input_path, output_dir)         
 
                 generate_time_end = time.time()
                 generate_time = generate_time_end - generate_time_start
@@ -416,9 +418,7 @@ class SpecGenerator:
 
 if __name__ == "__main__":
 
-    
     generator = SpecGenerator()
-    generator.copy_and_overwrite()
     generator.process_files()
 
 
