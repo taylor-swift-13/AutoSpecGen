@@ -252,6 +252,17 @@ generate_time: 63.52 s
 verify_time: 0.13 s
 --------------------------------------------
 
+File Name: Input.c
+synatax_accuracy: True
+loop_accuracy:  0.00% (0/0)
+assert_accuracy:  0.00% (0/3)
+post_accuracy:  100.00%  (1/1)
+total_accuracy:  25.00% (1/4)
+llm_time: 1
+generate_time: 49.90 s
+verify_time: 40.98 s
+--------------------------------------------
+
 File Name: PeriodControl.c
 synatax_accuracy: True
 loop_accuracy:  100.00% (3/3)
@@ -539,15 +550,15 @@ verify_time: 41.13 s
 --------------------------------------------
 ----------------------------------------------
 RESULT
-syntax_accuracy:88.00% (44/50) 
-loop_accuracy:  61.29%  (19/31) 
-assert_accuracy:  53.52% (152/284) 
-post_accuracy:  51.43% (36/70) 
-total_accuracy:  53.77% (207/385) 
-total_llm_time:  89
-total_generate_time: 2476.48 s
-total_verify_time: 1380.35 s
-average_llm_time:  1.78
-average_generate_time: 49.53 s
-average_verify_time: 27.61 s
+syntax_accuracy:90.00% (45/50) 
+loop_accuracy: 61.29%  (19/31) 
+assert_accuracy: 52.96% (152/287) 
+post_accuracy:  52.11% (37/71) 
+total_accuracy:  53.47% (208/389) 
+total_llm_time:  90
+total_generate_time: 2526.40 s
+total_verify_time: 1421.34 s
+average_llm_time:  1.80
+average_generate_time: 50.53 s
+average_verify_time: 28.43 s
 --------------------------------------------

@@ -1,0 +1,1683 @@
+File Name: ThreeAxisController.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: TripleFabsMax.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/TripleFabsMax.c (with preprocessing)
+[kernel:annot-error] Output/TripleFabsMax.c:8: Warning: 
+  unbound logic function fabs. Ignoring logic specification of function TripleFabsMaxFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: MatrixMulti.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+- True
+- True
+- True
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/MatrixMulti.c, line 9) in 'MatrixMultiFun':\nLet x = pIp_0.F10___MatrixMulti_nrow.\nLet a = pIp_0.F10___MatrixMulti_multiplier.\nLet x_1 = pIp_0.F10___MatrixMulti_nrc.\nLet x_2 = pIp_0.F10___MatrixMulti_ncol.\nLet a_1 = pIp_0.F10___MatrixMulti_faciend.\nLet a_2 = pIp_0.F10___MatrixMulti_product.\nLet a_3 = shift_float32(a_2, 0).\nLet x_3 = x * x_2.\nLet a_4 = shift_float32(a_2, i).\nAssume {\n  Type: is_uint8(ir_0) /\\ is_uint8(x) /\\ is_uint8(x_1) /\\ is_uint8(x_2).\n  (* Heap *)\n  Type: (region(pIp_0.F10___MatrixMulti_fun.base) <= 0) /\\\n      (region(a.base) <= 0) /\\ (region(a_2.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ linked(Malloc_0).\n  (* Goal *)\n  When: (0 <= i) /\\ (i < x_3).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_3, x_3).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a_1, 0), x * x_1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a, 0), x_1 * x_2).\n  (* Invariant *)\n  Have: 0 <= x.\n  (* Invariant *)\n  Have: (0 <= ir_0) /\\ (ir_0 <= x).\n  (* Else *)\n  Have: x <= ir_0.\n}\nProve: of_f32(havoc(Mf32_undef_0, Mf32_0, a_3, x_3)[a_4])\n         = of_f32(Mf32_0[a_4]).\nProver Z3 4.8.12 returns Timeout (Qed:6ms) (3s)", 'Error found in file: Output/MatrixMulti.c at line: 9', 'Error line content: ensures \\forall integer i; 0 <= i < pIp->nrow * pIp->ncol ==>')
+
+Postcond Results:
+- False
+
+------------------------------------------------
+File Name: InitVar.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/InitVar.c (with preprocessing)
+[kernel:annot-error] Output/InitVar.c:26: Warning: 
+  not an assignable left value: pIp->mModulator. Ignoring logic specification of function InitVarFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: AppInit.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/AppInit.c (with preprocessing)
+[kernel:annot-error] Output/AppInit.c:13: Warning: 
+  ipInitVar is not a pointer.. Ignoring code annotation
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: main.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/main.c (with preprocessing)
+[kernel:annot-error] Output/main.c:14: Warning: 
+  ipAppInit is not a pointer.. Ignoring code annotation
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: CalculateGyroRs.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+- True
+- True
+- True
+- True
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: CheckCal.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/CheckCal.c (with preprocessing)
+[kernel:annot-error] Output/CheckCal.c:13: Warning: 
+  unbound logic variable chksum. Ignoring loop annotation
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SendUartData.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SendUartData.c (with preprocessing)
+[kernel:annot-error] Output/SendUartData.c:8: Warning: 
+  not an assignable left value: pIp->addr. Ignoring logic specification of function SendUartDataFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: TMProcess.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/TMProcess.c (with preprocessing)
+[kernel:annot-error] Output/TMProcess.c:11: Warning: 
+  unbound logic variable pkv. Ignoring logic specification of function TMProcessFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: Tr32Float.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/Tr32Float.c, line 9) in 'Tr32FloatFun' (8/11):\nEffect at line 30\nLet a = pIp_0.F10___Tr32Float_ret.\nLet a_1 = pIp_0.F10___Tr32Float_pA.\nLet a_2 = pIp_0.F10___Tr32Float_pB.\nLet a_3 = pIp_0.F10___Tr32Float_pC.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_0.F10___Tr32Float_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a_2.base) <= 0) /\\\n      (region(a_3.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1) /\\ valid_rw(Malloc_0, a_2, 1) /\\\n      valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 1).\n}\nProve: invalid(Malloc_0, a_1, 1).\nProver Z3 4.8.12 returns Unknown (Qed:5ms)", 'Error found in file: Output/Tr32Float.c at line: 9', 'Error line content: assigns pIp->ui2f.ui32, pIp->pA, pIp->pB, pIp->pC, pIp->ret;')
+- ("Goal Assigns (file Output/Tr32Float.c, line 9) in 'Tr32FloatFun' (9/11):\nEffect at line 31\nLet a = pIp_0.F10___Tr32Float_ret.\nLet a_1 = pIp_0.F10___Tr32Float_pA.\nLet a_2 = pIp_0.F10___Tr32Float_pB.\nLet a_3 = pIp_0.F10___Tr32Float_pC.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_0.F10___Tr32Float_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a_2.base) <= 0) /\\\n      (region(a_3.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1) /\\ valid_rw(Malloc_0, a_2, 1) /\\\n      valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 1).\n}\nProve: invalid(Malloc_0, a_2, 1).\nProver Z3 4.8.12 returns Unknown (Qed:6ms)", 'Error found in file: Output/Tr32Float.c at line: 9', 'Error line content: assigns pIp->ui2f.ui32, pIp->pA, pIp->pB, pIp->pC, pIp->ret;')
+- ("Goal Assigns (file Output/Tr32Float.c, line 9) in 'Tr32FloatFun' (10/11):\nEffect at line 32\nLet a = pIp_0.F10___Tr32Float_ret.\nLet a_1 = pIp_0.F10___Tr32Float_pA.\nLet a_2 = pIp_0.F10___Tr32Float_pB.\nLet a_3 = pIp_0.F10___Tr32Float_pC.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_0.F10___Tr32Float_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a_2.base) <= 0) /\\\n      (region(a_3.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1) /\\ valid_rw(Malloc_0, a_2, 1) /\\\n      valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 1).\n}\nProve: invalid(Malloc_0, a_3, 1).\nProver Z3 4.8.12 returns Unknown (Qed:6ms)", 'Error found in file: Output/Tr32Float.c at line: 9', 'Error line content: assigns pIp->ui2f.ui32, pIp->pA, pIp->pB, pIp->pC, pIp->ret;')
+- ("Goal Assigns (file Output/Tr32Float.c, line 9) in 'Tr32FloatFun' (11/11):\nEffect at line 34\nLet a = pIp_0.F10___Tr32Float_ret.\nLet a_1 = pIp_0.F10___Tr32Float_pA.\nLet a_2 = pIp_0.F10___Tr32Float_pB.\nLet a_3 = pIp_0.F10___Tr32Float_pC.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_0.F10___Tr32Float_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a_2.base) <= 0) /\\\n      (region(a_3.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a_1, 1) /\\ valid_rw(Malloc_0, a_2, 1) /\\\n      valid_rw(Malloc_0, a_3, 1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, a, 1).\n}\nProve: invalid(Malloc_0, a, 1).\nProver Z3 4.8.12 returns Unknown (Qed:6ms)", 'Error found in file: Output/Tr32Float.c at line: 9', 'Error line content: assigns pIp->ui2f.ui32, pIp->pA, pIp->pB, pIp->pC, pIp->ret;')
+
+Assertion Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- False
+- False
+- False
+- False
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: NoctrlJudge.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/NoctrlJudge.c (with preprocessing)
+[kernel] Output/NoctrlJudge.c:27: 
+  syntax error:
+  Location: between lines 27 and 28, before or at token: if
+  25        /*@ loop invariant pIp->mFWarning.countAV >= 0;
+  26            loop assigns pIp->mFWarning.countAV;
+  
+  27        */
+  28        if (fabsmax > 2.0f)
+  
+  29        {
+  30            pIp->mFWarning.countAV++;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroChoose.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GyroChoose.c (with preprocessing)
+[kernel:annot-error] Output/GyroChoose.c:10: Warning: unexpected token 'i'
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: ThrusterCtrlLogic.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ThrusterCtrlLogic.c (with preprocessing)
+[kernel] Output/ThrusterCtrlLogic.c:13: 
+  syntax error:
+  Location: between lines 13 and 14, before or at token: if
+  11        /*@ loop invariant \valid(pIp);
+  12            loop assigns pIp->mThrDistribute.wPulse;
+  
+  13        */
+  14        if ( pIp -> mModulator[0].Yp != 0)
+  
+  15        {
+  16            pIp -> mThrDistribute.wPulse = pIp -> mThrDistribute.wPulse | 0x04 ;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModeCruise.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SAMSubModeCruise.c (with preprocessing)
+[kernel] Output/SAMSubModeCruise.c:14: 
+  syntax error:
+  Location: between lines 14 and 15, before or at token: if
+  12            loop assigns pIp->mFWarning.CWsp;
+  13            loop variant 1; // No actual loop, but variant is required for structure
+  
+  14        */
+  15        if (pIp->countMode == 4000)
+  
+  16        {
+  17            pIp->mFWarning.CWsp = TRUE;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroProceed.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns (file Output/GyroProceed.c, line 13) in 'GyroProceedFun' (2/9):\nEffect at line 20\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/GyroProceed.c at line: 13', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+- ("Goal Assigns (file Output/GyroProceed.c, line 13) in 'GyroProceedFun' (3/9):\nEffect at line 23\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:0.86ms) (3s)", 'Error found in file: Output/GyroProceed.c at line: 13', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+- ("Goal Assigns (file Output/GyroProceed.c, line 13) in 'GyroProceedFun' (4/9):\nEffect at line 26\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/GyroProceed.c at line: 13', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+- ("Goal Assigns (file Output/GyroProceed.c, line 13) in 'GyroProceedFun' (5/9):\nEffect at line 29\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/GyroProceed.c at line: 13', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+- ("Goal Assigns (file Output/GyroProceed.c, line 13) in 'GyroProceedFun' (8/9):\nEffect at line 40\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/GyroProceed.c at line: 13', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+- ("Goal Assigns (file Output/GyroProceed.c, line 13) in 'GyroProceedFun' (9/9):\nEffect at line 50\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/GyroProceed.c at line: 13', 'Error line content: assigns pIp->mGyroData.Gi[0], pIp->mGyroData.Gi[1];')
+
+Assertion Results:
+- True
+- False
+- False
+- False
+- False
+- True
+- True
+- False
+- False
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: Inputproceed.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/Inputproceed.c (with preprocessing)
+[kernel] Output/Inputproceed.c:31: 
+  syntax error:
+  Location: between lines 31 and 32, before or at token: if
+  29        /*@ loop invariant flgModetmp == SAM_CRUISE ==> \valid(pIp->mDSSData);
+  30            loop assigns pIp->mAttitude.angle[0], pIp->mAttitude.angle[1];
+  
+  31        */
+  32        if (flgModetmp == SAM_CRUISE)
+  
+  33        {
+  34            if (pIp->mDSSData.flgSP == 1)
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SoftFaultJudgeSP.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SoftFaultJudgeSP.c (with preprocessing)
+[kernel] Output/SoftFaultJudgeSP.c:16: 
+  syntax error:
+  Location: between lines 16 and 17, before or at token: if
+  14            loop assigns pIp->mFWarning.countSPLost, pIp->mFWarning.countSPSeen, pIp->mFWarning.Wsp, pIp->mFWarning.countSPset;
+  15            loop variant 0; 
+  
+  16        */
+  17        if (pIp->mDSSData.flgSP == 0)
+  
+  18        {
+  19            pIp->mFWarning.countSPLost++;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: Delay.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/Delay.c (with preprocessing)
+[kernel:annot-error] Output/Delay.c:7: Warning: 
+  \result meaningless. Ignoring logic specification of function DelayFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: LimitControllerInput.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/LimitControllerInput.c (with preprocessing)
+[kernel:parser:decimal-float] Output/LimitControllerInput.c:17: Warning: 
+  Floating-point constant 0.8f is not represented exactly. Will use 0x1.99999a0000000p-1.
+  (warn-once: no further messages from category 'parser:decimal-float' will be emitted)
+[kernel:annot-error] Output/LimitControllerInput.c:15: Warning: 
+  \result meaningless. Ignoring code annotation
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroPick.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GyroPick.c (with preprocessing)
+[kernel:annot-error] Output/GyroPick.c:22: Warning: 
+  Statement contract and ACSL pragmas over a local definition are not implemented. Ignoring annotation
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: TcProcess.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/TcProcess.c (with preprocessing)
+[kernel:annot-error] Output/TcProcess.c:15: Warning: 
+  \result meaningless. Ignoring code annotation
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: MatrixInv33F.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+- True
+- True
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: Input.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+- ("Goal Assigns nothing in 'InputFun' (1/3):\nEffect at line 18\nProve: false.\nProver Z3 4.8.12 returns Timeout (3s)", None, None)
+- ("Goal Assigns nothing in 'InputFun' (2/3):\nEffect at line 25\nProve: false.\nProver Z3 4.8.12 returns Timeout (3s)", None, None)
+- ("Goal Assigns nothing in 'InputFun' (3/3):\nEffect at line 31\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", None, None)
+
+Assertion Results:
+- False
+- False
+- False
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: PeriodControl.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/PeriodControl.c (with preprocessing)
+[kernel] Output/PeriodControl.c:53: 
+  syntax error:
+  Location: between lines 53 and 54, before or at token: if
+  51                loop assigns pIp->countSate;
+  52                loop variant pIp->countSate;
+  
+  53            */
+  54            if (pIp->countSate > 0xFFFFFFF0)
+  
+  55            {
+  56                pIp->countSate = 4000;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GetUartData.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GetUartData.c (with preprocessing)
+[kernel:annot-error] Output/GetUartData.c:9: Warning: 
+  \result meaningless. Ignoring logic specification of function GetUartDataFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: GyroStateGet.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/GyroStateGet.c (with preprocessing)
+[kernel:annot-error] Output/GyroStateGet.c:10: Warning: 
+  unbound logic variable gyroRecvData. Ignoring logic specification of function GyroStateGetFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: JetDataGet.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/JetDataGet.c (with preprocessing)
+[kernel] Output/JetDataGet.c:15: 
+  syntax error:
+  Location: between lines 15 and 16, before or at token: if
+  13        /*@ loop invariant \valid(pIp);
+  14            loop assigns pIp->mThrDistribute.stateFlag[0], pIp->mThrDistribute.stateFlag[1];
+  
+  15        */
+  16        if((ADDR_READ(0xE000) & 0x4) == 0x4)
+  
+  17        {
+  18            pIp -> mThrDistribute.stateFlag[0] = 1;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SwitchSS.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SwitchSS.c (with preprocessing)
+[kernel] Output/SwitchSS.c:15: 
+  syntax error:
+  Location: between lines 15 and 16, before or at token: if
+  13          loop invariant pIp != NULL;
+  14          loop variant 1; // No loop, but we can use a variant for clarity
+  
+  15        */
+  16        if (pIp -> mDSSData.stateFlag_A == 1)
+  
+  17        {
+  18            ADDR_WRITE(0x8000, 0x2);
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModePitch.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SAMSubModePitch.c (with preprocessing)
+[kernel] Output/SAMSubModePitch.c:17: 
+  syntax error:
+  Location: between lines 17 and 18, before or at token: if
+  15        /*@ loop invariant pIp->countPublic >= 0;
+  16            loop assigns pIp->countPublic;
+  
+  17        */
+  18        if (pIp->pSDS->flgSP == 1)
+  
+  19        {
+  20            pirawtmp = fabs(pIp->pSDS->piyaw);
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SoftFaultProceedSP.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SoftFaultProceedSP.c (with preprocessing)
+[kernel] Output/SoftFaultProceedSP.c:28: 
+  syntax error:
+  Location: between lines 28 and 29, before or at token: switch
+  26          loop assigns pIp->mFWarning.countSPset;
+  27          loop variant 10 - pIp->mFWarning.countSPset;
+  
+  28        */
+  29        switch (pIp->mFWarning.countSPset)
+  
+  30        {
+  31            case 5:
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: ThrABAutoChoose.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ThrABAutoChoose.c (with preprocessing)
+[kernel] Output/ThrABAutoChoose.c:13: 
+  syntax error:
+  Location: between lines 13 and 14, before or at token: if
+  11        /*@ loop invariant \valid(pIp);
+  12            loop assigns pIp->mThrDistribute.flgABChoose;
+  
+  13        */
+  14        if ((pIp -> mThrDistribute.stateFlag[0] == 1) &&
+  
+  15            (pIp -> mThrDistribute.stateFlag[1] == 1))
+  16        {
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: LimitFloat32.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/LimitFloat32.c (with preprocessing)
+[kernel] Output/LimitFloat32.c:15: 
+  syntax error:
+  Location: between lines 15 and 16, before or at token: if
+  13        /*@ loop invariant \valid(pIp);
+  14            loop assigns pIp->fvalue, *(pIp->ret);
+  
+  15        */
+  16        if (pIp -> fin > pIp -> fbound)
+  
+  17        {
+  18            pIp -> fvalue = pIp -> fbound ;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: DevControl.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/DevControl.c (with preprocessing)
+[kernel:annot-error] Output/DevControl.c:11: Warning: 
+  \result meaningless. Ignoring code annotation
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: Tr32Uint08.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/Tr32Uint08.c (with preprocessing)
+[kernel] Output/Tr32Uint08.c:18: 
+  syntax error:
+  Location: between lines 18 and 19, before or at token: if
+  16        /*@ loop invariant \valid(pIp->pA) && \valid(pIp->pB) && \valid(pIp->pC);
+  17            loop assigns uitemp1, uitemp2, uitemp3;
+  
+  18        */
+  19        if ((*(pIp->pA) == *(pIp->pB)) && (*(pIp->pA) == *(pIp->pC)))
+  
+  20        {
+  21            pIp->uiresult = *(pIp->pA);
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: LimitCtrlAngleInput.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/LimitCtrlAngleInput.c (with preprocessing)
+[kernel:annot-error] Output/LimitCtrlAngleInput.c:12: Warning: 
+  unbound logic variable LimitFloat32_ret_0. Ignoring logic specification of function LimitCtrlAngleInputFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModeRoll.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SAMSubModeRoll.c (with preprocessing)
+[kernel] Output/SAMSubModeRoll.c:19: 
+  syntax error:
+  Location: between lines 19 and 20, before or at token: if
+  17            loop assigns pIp->countPublic;
+  18            loop variant 16 - pIp->countPublic;
+  
+  19        */
+  20        if (pIp->pSDS->flgSP == 0x1)
+  
+  21        {
+  22            tmproyaw = ABS(pIp->pSDS->royaw);
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: CalculateGyroDg.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+- True
+- True
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+- True
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+- True
+
+------------------------------------------------
+File Name: DSSDataGet.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/DSSDataGet.c (with preprocessing)
+[kernel] Output/DSSDataGet.c:53: User Error: 
+  redefinition of 'ipDelay' in the same scope.
+  Previous declaration was at Output/DSSDataGet.c:48
+[kernel] User Error: stopping on file "Output/DSSDataGet.c" that has errors. Add
+  '-kernel-msg-key pp' for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: common.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/common.c (with preprocessing)
+[kernel] Output/common.c:15: User Error: 
+  Cannot find field next in type struct node
+  13    }
+  14    
+  
+  15    /*@ 
+  16    requires \valid(p) && \valid(p->next);
+  17    ensures \result == \old(p->value) + delta;
+  18    assigns p->value;
+  
+  19    */
+  20    int update_node_value(struct node* p, int delta) {
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: ModeControl.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ModeControl.c (with preprocessing)
+[kernel] Output/ModeControl.c:32: 
+  syntax error:
+  Location: between lines 32 and 33, before or at token: if
+  30          loop invariant flgModetmp1 == SAM_DAMP || flgModetmp1 == SAM_PITCH || flgModetmp1 == SAM_ROLL || flgModetmp1 == SAM_CRUISE;
+  31          loop assigns pIp->countMode;
+  
+  32        */
+  33        if (flgModetmp1 == SAM_DAMP)
+  
+  34        {
+  35            IPCREATE(SAMSubModeDamp, ipSAMSubModeDamp, .rate = &(pIp->mAttitude.rate[0]), .max = 0.15f, .countPublic = pIp->countPublic, .countMode = pIp->countMode, .flgMode = SAM_DAMP);
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: ModPNHP.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/ModPNHP.c (with preprocessing)
+[kernel:annot-error] Output/ModPNHP.c:7: Warning: 
+  pIp->halfperiod is not a pointer.. Ignoring logic specification of function ModPNHPFun
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: SAMSubModeDamp.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/SAMSubModeDamp.c (with preprocessing)
+[kernel] Output/SAMSubModeDamp.c:30: 
+  syntax error:
+  Location: between lines 30 and 31, before or at token: if
+  28          loop invariant pIp->countPublic >= 0;
+  29          loop assigns pIp->countPublic;
+  
+  30        */
+  31        if (fabsmax < pIp->max)
+  
+  32        {
+  33            pIp->countPublic++;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: LimitCtrlRateInput.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+- ("Goal Post-condition (file Output/LimitCtrlRateInput.c, line 11) in 'LimitCtrlRateInputFun':\nLet a = pIp_1.F12___LimitCtrlRateInput_pSA.\nLet a_1 = pIp_1.F12___LimitCtrlRateInput_pSCtrl.\nAssume {\n  (* Heap *)\n  Type: (region(pIp_1.F12___LimitCtrlRateInput_fun.base) <= 0) /\\\n      (region(a.base) <= 0) /\\ (region(a_1.base) <= 0) /\\ linked(Malloc_1).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_1, a, 6).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_1, shift_S7_TAG_CONTROLLERIN(a_1, 0), 9).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_1,\n          shift_float32(shiftfield_F6_TAG_ATTITUDE_PARA_rate(a), 0), 3).\n}\nProve: valid_rw(Malloc_0[L_Tr32Float_ret_45 <- 0][L_ipTr32Float_46 <- 0]\n                  [L_LimitFloat32_ret_0_49 <- 0][L_ipLimitFloat32_0_50 <- 0]\n                  [L_LimitFloat32_ret_1_52 <- 0][L_ipLimitFloat32_1_53 <- 0]\n                  [L_LimitFloat32_ret_2_55 <- 0][L_ipLimitFloat32_2_56 <- 0],\n         shift_S7_TAG_CONTROLLERIN(pIp_0.F12___LimitCtrlRateInput_pSCtrl, 0),\n         9).\nProver Z3 4.8.12 returns Unknown (Qed:5ms)", 'Error found in file: Output/LimitCtrlRateInput.c at line: 11', 'Error line content: ensures \\valid(pIp->pSCtrl + (0..2));')
+
+Postcond Results:
+- False
+
+------------------------------------------------
+File Name: PseudoRateModulator.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/PseudoRateModulator.c (with preprocessing)
+[kernel] Output/PseudoRateModulator.c:18: 
+  syntax error:
+  Location: between lines 18 and 19, before or at token: if
+  16        /*@ loop invariant \valid(pIp);
+  17            loop assigns pIp->pModulator->Yp, pIp->pModulator->Yn, pIp->pModulator->r; 
+  
+  18        */
+  19        if ((pIp->pModulator->u - pIp->pModulator->r) > pIp->h1)
+  
+  20        {
+  21            pIp->pModulator->Yp = 0x0;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: DiviationToFloat.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/DiviationToFloat.c (with preprocessing)
+[kernel] Output/DiviationToFloat.c:19: 
+  syntax error:
+  Location: between lines 19 and 20, before or at token: pIp
+  17            loop assigns pIp->fresult;
+  18            loop variant 0; 
+  
+  19        */
+  20        pIp->fresult = ((siint16)((pIp->input & pIp->mask) - pIp->offset)) * pIp->LSB;
+  
+  21    
+  22        *(pIp->ret) = pIp->fresult;
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: FaultJudgeProceed.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/FaultJudgeProceed.c (with preprocessing)
+[kernel] Output/FaultJudgeProceed.c:17: 
+  syntax error:
+  Location: between lines 17 and 18, before or at token: if
+  15        /*@ loop invariant true; // No loop present, but invariant for clarity
+  16            loop assigns \nothing;
+  
+  17        */
+  18        if ((pIp -> mFWarning.CWsp == TRUE) && (pIp -> mFWarning.Wsp == FALSE))
+  
+  19        {
+  20            IPCREATE(SoftFaultJudgeSP, ipSoftFaultJudgeSP);
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: MatrixTran.c
+
+Syntax Error:
+
+
+Loop Invariant Errors:
+- ('Goal Preservation of Invariant (file Output/MatrixTran.c, line 16):\nLet x = pIp_0.F10___MatrixTran_ncol.\nLet x_1 = pIp_2.F10___MatrixTran_ncol.\nLet x_2 = pIp_2.F10___MatrixTran_nrow.\nLet x_3 = pIp_1.F10___MatrixTran_nrow.\nLet x_4 = pIp_1.F10___MatrixTran_ncol.\nLet a = pIp_1.F10___MatrixTran_tran.\nLet x_5 = x_3 * x_4.\nLet a_1 = pIp_1.F10___MatrixTran_mat.\nLet x_6 = pIp_0.F10___MatrixTran_nrow.\nAssume {\n  Type: is_uint8(i_1) /\\ is_uint8(i) /\\ is_uint8(j) /\\ is_uint8(x_3) /\\\n      is_uint8(x_4) /\\ is_uint8(x_2) /\\ is_uint8(x_1) /\\ is_uint8(x_6) /\\\n      is_uint8(x).\n  (* Heap *)\n  Type: (region(pIp_1.F10___MatrixTran_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a_1, 0), x_5).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a, 0), x_5).\n  (* Pre-condition *)\n  Have: (0 < x_3) /\\ (0 < x_4).\n  (* Invariant *)\n  Have: (0 <= i_1) /\\ (i_1 <= x_2).\n  (* Then *)\n  Have: i_1 < x_2.\n  (* Invariant *)\n  Have: 0 <= x_1.\n  (* Invariant *)\n  Have: (0 <= j) /\\ (j <= x).\n  (* Else *)\n  Have: x <= j.\n}\nProve: to_uint8(1 + i) <= x_6.\nProver Z3 4.8.12 returns Timeout (Qed:4ms) (3s)', 'Error found in file: Output/MatrixTran.c at line: 16', 'Error line content: /*@ loop invariant 0 <= i <= pIp->nrow;')
+
+Loop Invariant Results:
+- False
+- True
+
+Assertion Errors:
+- ("Goal Assigns (file Output/MatrixTran.c, line 9) in 'MatrixTranFun' (2/2):\nEffect at line 19\nLet x = pIp_0.F10___MatrixTran_nrow.\nLet x_1 = pIp_0.F10___MatrixTran_ncol.\nLet a = pIp_0.F10___MatrixTran_tran.\nLet x_2 = x * x_1.\nLet a_1 = pIp_0.F10___MatrixTran_mat.\nAssume {\n  Type: is_uint8(x) /\\ is_uint8(x_1).\n  (* Heap *)\n  Type: (region(pIp_0.F10___MatrixTran_fun.base) <= 0) /\\\n      (region(a_1.base) <= 0) /\\ (region(a.base) <= 0) /\\ linked(Malloc_0).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a_1, 0), x_2).\n  (* Pre-condition *)\n  Have: valid_rw(Malloc_0, shift_float32(a, 0), x_2).\n  (* Pre-condition *)\n  Have: (0 < x) /\\ (0 < x_1).\n}\nProve: false.\nProver Z3 4.8.12 returns Timeout (Qed:1ms) (3s)", 'Error found in file: Output/MatrixTran.c at line: 9', 'Error line content: assigns pIp->tran[0..(pIp->ncol * pIp->nrow - 1)];')
+
+Assertion Results:
+- True
+- False
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: CheckCal16.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/CheckCal16.c (with preprocessing)
+[kernel:annot-error] Output/CheckCal16.c:13: Warning: 
+  unbound logic variable chksum. Ignoring loop annotation
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
+File Name: B_TcProcess.c
+
+Syntax Error:
+syntax Error
+[kernel] Parsing Output/B_TcProcess.c (with preprocessing)
+[kernel] Output/B_TcProcess.c:17: 
+  syntax error:
+  Location: between lines 17 and 18, before or at token: if
+  15        /*@ loop invariant 0 <= i <= 3;
+  16          loop variant 3 - i;
+  
+  17        */
+  18        if ((pIp -> tcaData[0] == 0xE1) && (pIp -> tcaData[1] == 0x00))
+  
+  19        {
+  20            IPCREATE(CheckCal, ipCheckCal, .len = 3, .pkv =  &(pIp->tcaData[0]), .chksum =  &chksum);
+[kernel] Frama-C aborted: invalid user input.
+
+
+Loop Invariant Errors:
+No Loop Invariant Errors.
+
+Loop Invariant Results:
+No Loop Invariant Results.
+
+Assertion Errors:
+No Assertion Errors.
+
+Assertion Results:
+No Assertion Results.
+
+Postcond Errors:
+No Postcond Errors.
+
+Postcond Results:
+No Postcond Results.
+
+------------------------------------------------
