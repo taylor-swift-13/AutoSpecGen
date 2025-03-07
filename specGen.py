@@ -341,16 +341,31 @@ class SpecGenerator:
         total_llm_time = 0
 
 
+
+
         for filename in os.listdir(input_dir):
-            if filename.endswith(".c"):              
+            if filename.endswith(".c"):
+                
                 count = count + 1
 
                 input_path = os.path.join(input_dir, filename)
 
+                
+                 # 新增文件存在性检查
+                if  os.path.exists(f'Result/result_{self.llm}_{self.m}{self.n}_{self.prompt}.txt'):
+                
+                    with open(f'Result/result_{self.llm}_{self.m}{self.n}_{self.prompt}.txt', "r", encoding="utf-8") as f:
+                        msg = f.read()
+                    
+
+                    if f"File Name: {filename}" in msg:
+                        continue
+
 
                 generate_time_start = time.time()
 
-                llm_time = self.process_single_file(input_path, output_dir)         
+                llm_time = self.process_single_file(input_path, output_dir)
+            
 
                 generate_time_end = time.time()
                 generate_time = generate_time_end - generate_time_start
